@@ -1,103 +1,8 @@
-<h1>Infrastructure Ontology</h1>
-<h2>Description</h2>
-<h3>Purpose</h3>
-<p>In energy domain, a simplified infrastructure topology of the system should be described in order to deliver intelligent services. The infrastructure topology facilitates the description of an infrastructure in a flexible way by allowing to describe the infrastructure’s components and its relations. </p>
-<h3>Scope</h3>
-<p>Infrastructure ontology provides OWL classes and properties to allow infrastructure of an energy system to be described.</p>
-<h3>Description</h3>
-<p>This Infrastructure Ontology helps to define the infrastructure system of OMEGA-X use cases. The main class is the system which can be a physical system, a virtual system, an equipment or a site. A system can have a system configuration encompassing different properties, in general defined from the data sheet or from an initial configuration of the system. New module can be created to define the infrastructure of a specific use case family. This new module should be aligned with the general infrastructure ontology.</p>
-<h2>Competency Questions</h2>
-<h3>Querying Questions</h3>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Question in natural language</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>cq-1</td>
-<td>What is the identifier of specific system?</td>
-<td>the id of a specific system</td>
-</tr>
-<tr>
-<td>cq-2</td>
-<td>What is the system connected to a specific system?</td>
-<td>A weather station  is connected to meter</td>
-</tr>
-<tr>
-<td>cq-3</td>
-<td>What is the location of a specific site?</td>
-<td>the  geolocation of a solar plant</td>
-</tr>
-<tr>
-<td>cq-1</td>
-<td>What is the system configuratin of a specific equipment?</td>
-<td>the configuration  of a specific battery includig the nominal charge voltage</td>
-</tr>
-</tbody>
-</table>
-<h3>Inference Questions</h3>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Question in natural language</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>iq-1</td>
-<td>What are the systems connected to another system?</td>
-<td>the list of systems connected via connected to target and connected to source relations</td>
-</tr>
-<tr>
-<td>iq-2</td>
-<td>What are the systems having a specific system configuration?</td>
-<td>the list of batteries having the same configuration</td>
-</tr>
-</tbody>
-</table>
-<h2>Glossary</h2>
-<h3>OMEGA-X Infrastructure</h3>
-<ul>
-<li><a href="https://w3id.org/omega-x/InfrastructureOntology/ValueSet/"><strong>infra:<em>System</em></strong></a>
-A system may be an equipment, a site, or any other physical or virtual system. A system that is neither an equipment nor a site may be, for instance, an electric grid or a data analytics service available on a Dataspace.</li>
-<li><a href="https://w3id.org/omega-x/InfrastructureOntology/Equipment/"><strong>infra:Equipment</strong></a>
-An equipement is a physical system which is part of the infrastructure.An equipment may be, for instance, an inverter or an electric vehicle charging station.</li>
-<li><a href="https://w3id.org/omega-x/InfrastructureOntology/Site/"><strong>infra:Site</strong></a>
-A site is a part of the physical world or a virtual world that is inherently both located in this world and having a 3D spatial extent. It can include more than one equipment.A site may be, for instance, a solar plant or an electric vehicle charging station pool.</li>
-<li><a href="https://w3id.org/omega-x/InfrastructureOntology/SystemConfiguration/"><strong>infra:SystemConfiguration</strong></a>
-A system configuration is a set of properties characterizing its structure and behavior. In case of an equipment, it may reflect its datasheet.</li>
-</ul>
-<h2>OWL Description</h2>
-<p><img alt="Diagram" src="./InfraModule-v1.0.png"/></p>
-<h1>Recommendations</h1>
-<ul>
-<li>A <code>infra:System</code> can be an <code>eds:EvaluationPoint</code> (see <a href="../Energy Data Set Ontology"><em>EvaluationPoint</em></a> once an energy data set is attached to it. </li>
-<li>The static attributes of an <code>infra:System</code> can be defined in <code>infra:SystemConfiguration</code>. </li>
-<li>A <code>infra:System</code> can have a location. </li>
-<li>A <code>infra:System</code> can consist of an another  <code>infra:System</code> or many  <code>infra:System</code>.</li>
-<li>A An <code>infra:System</code> can be connected to another An <code>infra:System</code>. To precise the direction of the connection the object properties <code>infra:isConnectedTo</code> and An <code>infra:isConnectedFrom</code></li>
-<li>For each specific use case family, a detailed infrastructure is defined to create the taxonomy of sites, equipements and static attributes, in addition to the relations between different systems.</li>
-</ul>
-<h2>Related Work</h2>
-<h3>SEAS</h3>
-<ul>
-<li>
-<p><a href="https://w3id.org/seas/System"><strong><em>seas:System</em></strong></a>: The class of systems, i.e., systems virtually isolated from the environment, whose behaviour and interactions with the environment are modeled.</p>
-</li>
-<li>
-<p><a href="https://w3id.org/seas/connectedTo"><strong><em>seas:connectedTo</em></strong></a>: Links a system to a system it is connected to. Connected systems interact in some way. The exact meaning of interact is defined by sub properties of [<strong><em>seas:connectedTo</em></strong>]. </p>
-</li>
-</ul><!DOCTYPE html>
+<html><head></head><body><!DOCTYPE html>
 
 <html>
 <head>
-<title>Infrastructure Ontology</title>
+<title>Energy Data Set Ontology</title>
 <style>
         #pylode {
             position: fixed;
@@ -379,16 +284,25 @@ td {
 <script id="schema.org" type="application/ld+json">
 [
   {
-    "@id": "https://w3id.org/omega-x/InfrastructureOntology",
+    "@id": "https://w3id.org/omega-x/EnergyDataSetOntology",
     "@type": [
       "https://schema.org/DefinedTermSet"
     ],
     "https://schema.org/contributor": [
       {
-        "@id": "_:nd22f4eb0d2234e94a95335d15471d85db1"
+        "@id": "_:na75ae2a00bac41b887b95388ea242399b1"
       },
       {
-        "@id": "_:nd22f4eb0d2234e94a95335d15471d85db2"
+        "@id": "_:na75ae2a00bac41b887b95388ea242399b2"
+      },
+      {
+        "@id": "_:na75ae2a00bac41b887b95388ea242399b3"
+      }
+    ],
+    "https://schema.org/copyrightNotice": [
+      {
+        "@language": "en",
+        "@value": "Copyright © Omega-X Consortium 2022-2025"
       }
     ],
     "https://schema.org/creator": [
@@ -398,12 +312,14 @@ td {
     ],
     "https://schema.org/dateCreated": [
       {
-        "@value": "2024-01-22"
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-09-04"
       }
     ],
     "https://schema.org/dateIssued": [
       {
-        "@value": "2024-03-06"
+        "@language": "en",
+        "@value": "2024-05-06"
       }
     ],
     "https://schema.org/dateModified": [
@@ -415,7 +331,7 @@ td {
     "https://schema.org/description": [
       {
         "@language": "en",
-        "@value": "Purpose: Contextual information about shared data sets in an Energy Data Space should include information about infrastructure that produced those data. Scope: Infrastructure ontology provides OWL classes and properties to allow infrastructure of an energy system to be described. Description: This Infrastructure Ontology helps to define infrastructure components in various domains such as photovoltaic plants, electromobility, etc. It primarily comprises interconnected systems that are have attributes that are set in a datsheet or configured.."
+        "@value": "This Energy Data set Ontology helps to define data sets in Energy Data Spaces. It adds:\n- the technical context as the property, the schedule, and the quality associated to an energy data set\n- the exchange context as the participants of the data exchange.\n- the evaluation point attached to the data set exchange.\nScope : Sharing data resources in complex environments like in the case of energy domain requires some contextual information together with data values to facilitate and ensure consistent interpretation of data. \n"
       }
     ],
     "https://schema.org/license": [
@@ -426,16 +342,12 @@ td {
     "https://schema.org/name": [
       {
         "@language": "en",
-        "@value": " Infrastructure Ontology"
-      },
-      {
-        "@language": "en",
-        "@value": "Infrastructure Ontology"
+        "@value": "Energy Data Set Ontology"
       }
     ]
   },
   {
-    "@id": "_:nd22f4eb0d2234e94a95335d15471d85db1",
+    "@id": "_:na75ae2a00bac41b887b95388ea242399b1",
     "https://schema.org/name": [
       {
         "@value": "Lina Nachabe"
@@ -443,10 +355,18 @@ td {
     ]
   },
   {
-    "@id": "_:nd22f4eb0d2234e94a95335d15471d85db2",
+    "@id": "_:na75ae2a00bac41b887b95388ea242399b2",
     "https://schema.org/name": [
       {
-        "@value": "Cyril Effantin"
+        "@value": "Fatma-Zohra Hannou"
+      }
+    ]
+  },
+  {
+    "@id": "_:na75ae2a00bac41b887b95388ea242399b3",
+    "https://schema.org/name": [
+      {
+        "@value": "Maxime Lefrançois"
       }
     ]
   }
@@ -456,7 +376,7 @@ td {
 <body>
 <div id="content">
 <div class="section" id="metadata">
-<h1> Infrastructure OntologyInfrastructure Ontology</h1>
+<h1>Energy Data Set Ontology</h1>
 <h2>Metadata</h2>
 <dl>
 <div>
@@ -464,19 +384,14 @@ td {
 <strong>IRI</strong>
 </dt>
 <dd>
-<code>https://w3id.org/omega-x/InfrastructureOntology</code>
+<code>https://w3id.org/omega-x/EnergyDataSetOntology</code>
 </dd>
 </div>
 <div>
 <dt>
 <a class="hover_property" href="http://purl.org/dc/terms/title" title="A name given to the resource. Defined in DCMI Metadata Terms">Title</a>
 </dt>
-<dd>
-<ul>
-<li><p>Infrastructure Ontology</p></li>
-<li><p>Infrastructure Ontology</p></li>
-</ul>
-</dd>
+<dd><p>Energy Data Set Ontology</p></dd>
 </div>
 <div>
 <dt>
@@ -497,7 +412,12 @@ td {
 </li>
 <li>
 <span>
-<span>Cyril Effantin</span>
+<span>Fatma-Zohra Hannou</span>
+</span>
+</li>
+<li>
+<span>
+<span>Maxime Lefrançois</span>
 </span>
 </li>
 </ul>
@@ -507,7 +427,7 @@ td {
 <dt>
 <a class="hover_property" href="http://purl.org/dc/terms/created" title="Date of creation of the resource. Defined in DCMI Metadata Terms">Date Created</a>
 </dt>
-<dd><p>2024-01-22</p></dd>
+<dd><p>2023-09-04</p></dd>
 </div>
 <div>
 <dt>
@@ -519,7 +439,7 @@ td {
 <dt>
 <a class="hover_property" href="http://purl.org/dc/terms/issued" title="Date of formal issuance of the resource. Defined in DCMI Metadata Terms">Date Issued</a>
 </dt>
-<dd><p>2024-03-06</p></dd>
+<dd><p>2024-05-06</p></dd>
 </div>
 <div>
 <dt>
@@ -531,10 +451,16 @@ td {
 </div>
 <div>
 <dt>
+<a class="hover_property" href="http://purl.org/dc/terms/rights" title="Information about rights held in and over the resource. Defined in DCMI Metadata Terms">Rights</a>
+</dt>
+<dd><p>Copyright © Omega-X Consortium 2022-2025</p></dd>
+</div>
+<div>
+<dt>
 <a class="hover_property" href="http://www.w3.org/2002/07/owl#versionIRI" title="The property that identifies the version IRI of an ontology. Defined in The OWL 2 Schema vocabulary (OWL 2)">Version Iri</a>
 </dt>
 <dd>
-<a href="https://w3id.org/omega-x/InfrastructureOntology-1.0">https://w3id.org/omega-x/InfrastructureOntology-1.0</a>
+<a href="https://w3id.org/omega-x/EnergyDataSetOntology-1.0/">https://w3id.org/omega-x/EnergyDataSetOntology-1.0/</a>
 </dd>
 </div>
 <div>
@@ -547,140 +473,118 @@ td {
 <dt>
 <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespacePrefix" title="None. Defined in None">Preferred Namespace Prefix</a>
 </dt>
-<dd><p>infra</p></dd>
+<dd><p>eds</p></dd>
 </div>
 <div>
 <dt>
 <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespaceUri" title="None. Defined in None">Preferred Namespace Uri</a>
 </dt>
 <dd>
-<a href="https://w3id.org/omega-x/InfrastructureOntology/">infra:</a>
+<a href="https://w3id.org/omega-x/EnergyDataSetOntology/">eds:</a>
 </dd>
 </div>
 <div>
 <dt>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </dt>
-<dd><p>Purpose: Contextual information about shared data sets in an Energy Data Space should include information about infrastructure that produced those data. Scope: Infrastructure ontology provides OWL classes and properties to allow infrastructure of an energy system to be described. Description: This Infrastructure Ontology helps to define infrastructure components in various domains such as photovoltaic plants, electromobility, etc. It primarily comprises interconnected systems that are have attributes that are set in a datsheet or configured..</p></dd>
+<dd><p>This Energy Data set Ontology helps to define data sets in Energy Data Spaces. It adds:
+- the technical context as the property, the schedule, and the quality associated to an energy data set
+- the exchange context as the participants of the data exchange.
+- the evaluation point attached to the data set exchange.
+Scope : Sharing data resources in complex environments like in the case of energy domain requires some contextual information together with data values to facilitate and ensure consistent interpretation of data. </p></dd>
 </div>
 </dl>
 </div>
 <div class="section" id="classes">
 <h2>Classes</h2>
-<div class="property entity" id="Equipment">
-<h3>Equipment
+<div class="property entity" id="ExchangeContext">
+<h3>Exchange Context
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </h3>
 <table>
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/InfrastructureOntology/Equipment</code>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
-</th>
-<td>
-<a href="https://w3id.org/omega-x/InfrastructureOntology/">infra:</a>
+<code>https://w3id.org/omega-x/EnergyDataSetOntology/ExchangeContext</code>
 </td>
 </tr>
 <tr>
 <th>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </th>
-<td><p>An equipement is a physical system which is part of the infrastructure.An equipment may be, for instance, an inverter or an electric vehicle charging station.</p></td>
+<td><p>Exchange context where the exchange of data takes place inluding the source and target particpants of the exchange.</p></td>
 </tr>
 <tr>
 <th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-</th>
-<td>
-<span>
-<a href="#System">System</a>
-<sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="Site">
-<h3>Site
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>https://w3id.org/omega-x/InfrastructureOntology/Site</code>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
-</th>
-<td>
-<a href="https://w3id.org/omega-x/InfrastructureOntology/">infra:</a>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-</th>
-<td><p>A site is a part of the physical world or a virtual world that is inherently both located in this world and having a 3D spatial extent. It can include more than one equipment.A site may be, for instance, a solar plant or an electric vehicle charging station pool.</p></td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-</th>
-<td>
-<span>
-<a href="#System">System</a>
-<sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="System">
-<h3>System
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>https://w3id.org/omega-x/InfrastructureOntology/System</code>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
-</th>
-<td>
-<a href="https://w3id.org/omega-x/InfrastructureOntology/">infra:</a>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-</th>
-<td><p>A system may be an equipment, a site, or any other physical or virtual system. A system that is neither an equipment nor a site may be, for instance, an electric grid or a data analytics service available on a Dataspace.</p></td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
 </th>
 <td>
 <ul>
 <li>
-<a href="https://w3id.org/seas/System">seas:System</a>
+<span>
+<a href="#exchanges">exchanges</a>
+<sup class="sup-op" title="OWL Object Property">op</sup>
+</span>
 </li>
 <li>
-<a href="https://w3id.org/omega-x/EnergyDataSetOntology/EvaluationPoint">eds:EvaluationPoint</a>
+<span>
+<a href="#fromSource">from source</a>
+<sup class="sup-op" title="OWL Object Property">op</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#toTarget">to target</a>
+<sup class="sup-op" title="OWL Object Property">op</sup>
+</span>
 </li>
 </ul>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+</th>
+<td>
+<span>
+<a href="#isExchangedIn">is exchanged in</a>
+<sup class="sup-op" title="OWL Object Property">op</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="EnergyDataSet">
+<h3>Energy Data Set
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/EnergyDataSetOntology/EnergyDataSet</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/EnergyDataSetOntology/">eds:</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Group of data exchanged using an Energy Dataspace.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/EventTimeSeriesOntology/ValueSet">ets:ValueSet</a>
 </td>
 </tr>
 <tr>
@@ -691,50 +595,20 @@ td {
 <ul>
 <li>
 <span>
-<a href="#isConnectedTo">is connected to</a>
+<a href="#isExchangedIn">is exchanged in</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 </li>
 <li>
 <span>
-<a href="#isConnectedFrom">is connected from</a>
+<a href="#includesTechnicalContext">includes technical context</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 </li>
 <li>
 <span>
-<a href="#consistsOf">consists of </a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-</li>
-<li>
-<span>
-<a href="#isPartOf">is part of</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-</li>
-<li>
-<span>
-<a href="#hasSystemProperty">has system property</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-</li>
-<li>
-<span>
-<a href="#hasLocation">has location</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-</li>
-<li>
-<span>
-<a href="#hasSystemConfiguration">has system configuration</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-</li>
-<li>
-<span>
-<a href="#isAssociatedWith">is associated with</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
+<a href="#build">build</a>
+<sup class="sup-dp" title="OWL Datatype Property">dp</sup>
 </span>
 </li>
 </ul>
@@ -748,31 +622,149 @@ td {
 <ul>
 <li>
 <span>
-<a href="#isConnectedTo">is connected to</a>
+<a href="#exchanges">exchanges</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 </li>
 <li>
 <span>
-<a href="#isConnectedFrom">is connected from</a>
+<a href="#isTechnicalContextOf">is technical context of</a>
+<sup class="sup-op" title="OWL Object Property">op</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="EvaluationPoint">
+<h3>Evaluation Point
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/EnergyDataSetOntology/EvaluationPoint</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/EnergyDataSetOntology/">eds:</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Evaluation point concerned by the data exchanged. It can be either a physical or virtual component. An evaluation point can be a smart meter collecting the data or a software compiling the data.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+</th>
+<td>
+<span>
+<a href="#isEvaluationPointOf">is evaluation point of</a>
+<sup class="sup-op" title="OWL Object Property">op</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+</th>
+<td>
+<span>
+<a href="#includesEvaluationPoint">includes evaluation point</a>
+<sup class="sup-op" title="OWL Object Property">op</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="TechnicalContext">
+<h3>Technical Context
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/EnergyDataSetOntology/TechnicalContext</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/EnergyDataSetOntology/">eds:</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Technical characteristics of the context where the exchange of data takes place.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#isTechnicalContextOf">is technical context of</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 </li>
 <li>
 <span>
-<a href="#consistsOf">consists of </a>
+<a href="#includesEvaluationPoint">includes evaluation point</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 </li>
 <li>
 <span>
-<a href="#isPartOf">is part of</a>
+<a href="#includesSchedule">includes schedule</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 </li>
 <li>
 <span>
-<a href="#isSystemConfigurationOf">is system configuration of</a>
+<a href="#includesProperty">includes property</a>
+<sup class="sup-op" title="OWL Object Property">op</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#valueDataType">value data type</a>
+<sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#includesTechnicalContext">includes technical context</a>
+<sup class="sup-op" title="OWL Object Property">op</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#isEvaluationPointOf">is evaluation point of</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 </li>
@@ -789,7 +781,7 @@ td {
 <span>
 <span>
 <span>
-<a href="#hasLocation">has location</a>
+<a href="#includesProperty">includes property</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>some<br/>
 </span>
@@ -799,97 +791,13 @@ td {
 <span>
 <span>
 <span>
-<a href="#hasSystemConfiguration">has system configuration</a>
+<a href="#includesSchedule">includes schedule</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-<span>
-<span class="cardinality">max</span>
-<span>1</span>
-</span><br/>
+</span>some<br/>
 </span>
 </span>
 </li>
 </ul>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
-</th>
-<td>
-<ul>
-<li>
-<span>
-<a href="#Equipment">Equipment</a>
-<sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span>
-</li>
-<li>
-<span>
-<a href="#Site">Site</a>
-<sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span>
-</li>
-</ul>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="SystemConfiguration">
-<h3>System Configuration
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>https://w3id.org/omega-x/InfrastructureOntology/SystemConfiguration</code>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
-</th>
-<td>
-<a href="https://w3id.org/omega-x/InfrastructureOntology/">infra:</a>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-</th>
-<td><p>A system configuration is a set of properties characterizing its structure and behavior. In case of an equipment, it may reflect its datasheet.</p></td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-</th>
-<td>
-<ul>
-<li>
-<span>
-<a href="#isSystemConfigurationOf">is system configuration of</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-</li>
-<li>
-<span>
-<a href="#includesProperty">includes property</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-</th>
-<td>
-<span>
-<a href="#hasSystemConfiguration">has system configuration</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
 </td>
 </tr>
 </table>
@@ -897,49 +805,15 @@ td {
 </div>
 <div class="section" id="objectproperties">
 <h2>Object Properties</h2>
-<div class="property entity" id="isConnected">
-<h3>is connected
+<div class="property entity" id="isExchangedIn">
+<h3>is exchanged in
             <sup class="sup-op" title="OWL Object Property">op</sup>
 </h3>
 <table>
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/InfrastructureOntology/isConnected</code>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="https://w3id.org/profile/ontdoc/superPropertyOf" title="Inverse of RDFS' subPropertyOf. Defined in Ontology Documentation Profile">Super Property Of</a>
-</th>
-<td>
-<ul>
-<li>
-<span>
-<a href="#isConnectedTo">is connected to</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-</li>
-<li>
-<span>
-<a href="#isConnectedFrom">is connected from</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-</li>
-</ul>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="isConnectedTo">
-<h3>is connected to
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>https://w3id.org/omega-x/InfrastructureOntology/isConnectedTo</code>
+<code>https://w3id.org/omega-x/EnergyDataSetOntology/isExchangedIn</code>
 </td>
 </tr>
 <tr>
@@ -947,25 +821,14 @@ td {
 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
 </th>
 <td>
-<a href="https://w3id.org/omega-x/InfrastructureOntology/">infra:</a>
+<a href="https://w3id.org/omega-x/EnergyDataSetOntology/">eds:</a>
 </td>
 </tr>
 <tr>
 <th>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </th>
-<td><p>This property permits to create the simplified topology link toward a system in downstream.</p></td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
-</th>
-<td>
-<span>
-<a href="#isConnected">infra:isConnected</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-</td>
+<td><p>Links the data set to a specific exchange context.</p></td>
 </tr>
 <tr>
 <th>
@@ -973,7 +836,7 @@ td {
 </th>
 <td>
 <span>
-<a href="#System">System</a>
+<a href="#EnergyDataSet">Energy Data Set</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -984,22 +847,22 @@ td {
 </th>
 <td>
 <span>
-<a href="#System">System</a>
+<a href="#ExchangeContext">Exchange Context</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
 </tr>
 </table>
 </div>
-<div class="property entity" id="isConnectedFrom">
-<h3>is connected from
+<div class="property entity" id="exchanges">
+<h3>exchanges
             <sup class="sup-op" title="OWL Object Property">op</sup>
 </h3>
 <table>
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/InfrastructureOntology/isConnectedFrom</code>
+<code>https://w3id.org/omega-x/EnergyDataSetOntology/exchanges</code>
 </td>
 </tr>
 <tr>
@@ -1007,25 +870,14 @@ td {
 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
 </th>
 <td>
-<a href="https://w3id.org/omega-x/InfrastructureOntology/">infra:</a>
+<a href="https://w3id.org/omega-x/EnergyDataSetOntology/">eds:</a>
 </td>
 </tr>
 <tr>
 <th>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </th>
-<td><p>This property permits to create the simplified topology link toward an equipment in upstream.</p></td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
-</th>
-<td>
-<span>
-<a href="#isConnected">infra:isConnected</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-</td>
+<td><p>Links the exchange context to a specific data set.</p></td>
 </tr>
 <tr>
 <th>
@@ -1033,7 +885,7 @@ td {
 </th>
 <td>
 <span>
-<a href="#System">System</a>
+<a href="#ExchangeContext">Exchange Context</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -1044,22 +896,22 @@ td {
 </th>
 <td>
 <span>
-<a href="#System">System</a>
+<a href="#EnergyDataSet">Energy Data Set</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
 </tr>
 </table>
 </div>
-<div class="property entity" id="consistsOf">
-<h3>consists of 
+<div class="property entity" id="includesTechnicalContext">
+<h3>includes technical context
             <sup class="sup-op" title="OWL Object Property">op</sup>
 </h3>
 <table>
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/InfrastructureOntology/consistsOf</code>
+<code>https://w3id.org/omega-x/EnergyDataSetOntology/includesTechnicalContext</code>
 </td>
 </tr>
 <tr>
@@ -1067,14 +919,14 @@ td {
 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
 </th>
 <td>
-<a href="https://w3id.org/omega-x/InfrastructureOntology/">infra:</a>
+<a href="https://w3id.org/omega-x/EnergyDataSetOntology/">eds:</a>
 </td>
 </tr>
 <tr>
 <th>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </th>
-<td><p>This property permits to link a system to its components.</p></td>
+<td><p>Links the data set to a specific technical context.</p></td>
 </tr>
 <tr>
 <th>
@@ -1082,7 +934,7 @@ td {
 </th>
 <td>
 <span>
-<a href="#System">System</a>
+<a href="#EnergyDataSet">Energy Data Set</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -1093,22 +945,22 @@ td {
 </th>
 <td>
 <span>
-<a href="#System">System</a>
+<a href="#TechnicalContext">Technical Context</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
 </tr>
 </table>
 </div>
-<div class="property entity" id="isPartOf">
-<h3>is part of
+<div class="property entity" id="isTechnicalContextOf">
+<h3>is technical context of
             <sup class="sup-op" title="OWL Object Property">op</sup>
 </h3>
 <table>
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/InfrastructureOntology/isPartOf</code>
+<code>https://w3id.org/omega-x/EnergyDataSetOntology/isTechnicalContextOf</code>
 </td>
 </tr>
 <tr>
@@ -1116,14 +968,14 @@ td {
 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
 </th>
 <td>
-<a href="https://w3id.org/omega-x/InfrastructureOntology/">infra:</a>
+<a href="https://w3id.org/omega-x/EnergyDataSetOntology/">eds:</a>
 </td>
 </tr>
 <tr>
 <th>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </th>
-<td><p>This property links a system component to the system it is part of.</p></td>
+<td><p>Links the technical context to a specific data set.</p></td>
 </tr>
 <tr>
 <th>
@@ -1131,7 +983,7 @@ td {
 </th>
 <td>
 <span>
-<a href="#System">System</a>
+<a href="#TechnicalContext">Technical Context</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -1142,22 +994,22 @@ td {
 </th>
 <td>
 <span>
-<a href="#System">System</a>
+<a href="#EnergyDataSet">Energy Data Set</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
 </tr>
 </table>
 </div>
-<div class="property entity" id="hasSystemProperty">
-<h3>has system property
+<div class="property entity" id="includesEvaluationPoint">
+<h3>includes evaluation point
             <sup class="sup-op" title="OWL Object Property">op</sup>
 </h3>
 <table>
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/InfrastructureOntology/hasSystemProperty</code>
+<code>https://w3id.org/omega-x/EnergyDataSetOntology/includesEvaluationPoint</code>
 </td>
 </tr>
 <tr>
@@ -1165,14 +1017,14 @@ td {
 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
 </th>
 <td>
-<a href="https://w3id.org/omega-x/InfrastructureOntology/">infra:</a>
+<a href="https://w3id.org/omega-x/EnergyDataSetOntology/">eds:</a>
 </td>
 </tr>
 <tr>
 <th>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </th>
-<td><p>This property permits to link a system to its datasheet attributes or configured parameters.</p></td>
+<td><p>Links the data set to a specific evaluation point.</p></td>
 </tr>
 <tr>
 <th>
@@ -1180,91 +1032,7 @@ td {
 </th>
 <td>
 <span>
-<a href="#System">System</a>
-<sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-</th>
-<td>
-<a href="https://w3id.org/omega-x/PropertyOntology/Property">prop:Property</a>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="hasLocation">
-<h3>has location
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>https://w3id.org/omega-x/InfrastructureOntology/hasLocation</code>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
-</th>
-<td>
-<a href="https://w3id.org/omega-x/InfrastructureOntology/">infra:</a>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-</th>
-<td><p>This property permits to link a system to its location.</p></td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-</th>
-<td>
-<span>
-<a href="#System">System</a>
-<sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="hasSystemConfiguration">
-<h3>has system configuration
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>https://w3id.org/omega-x/InfrastructureOntology/hasSystemConfiguration</code>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
-</th>
-<td>
-<a href="https://w3id.org/omega-x/InfrastructureOntology/">infra:</a>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-</th>
-<td><p>This property permits to link a system to its configuration.</p></td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-</th>
-<td>
-<span>
-<a href="#System">System</a>
+<a href="#TechnicalContext">Technical Context</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -1275,22 +1043,22 @@ td {
 </th>
 <td>
 <span>
-<a href="#SystemConfiguration">System Configuration</a>
+<a href="#EvaluationPoint">Evaluation Point</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
 </tr>
 </table>
 </div>
-<div class="property entity" id="isSystemConfigurationOf">
-<h3>is system configuration of
+<div class="property entity" id="fromSource">
+<h3>from source
             <sup class="sup-op" title="OWL Object Property">op</sup>
 </h3>
 <table>
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/InfrastructureOntology/isSystemConfigurationOf</code>
+<code>https://w3id.org/omega-x/EnergyDataSetOntology/fromSource</code>
 </td>
 </tr>
 <tr>
@@ -1298,14 +1066,14 @@ td {
 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
 </th>
 <td>
-<a href="https://w3id.org/omega-x/InfrastructureOntology/">infra:</a>
+<a href="https://w3id.org/omega-x/EnergyDataSetOntology/">eds:</a>
 </td>
 </tr>
 <tr>
 <th>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </th>
-<td><p>This property permits to link a system configuration to its corresponding system.</p></td>
+<td><p>Relates the Exchange Context to its source market participant.</p></td>
 </tr>
 <tr>
 <th>
@@ -1313,7 +1081,99 @@ td {
 </th>
 <td>
 <span>
-<a href="#SystemConfiguration">System Configuration</a>
+<a href="#ExchangeContext">Exchange Context</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/EnergyRoleOntology/MarketParticipant">role:MarketParticipant</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="toTarget">
+<h3>to target
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/EnergyDataSetOntology/toTarget</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/EnergyDataSetOntology/">eds:</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Relates the Exchange Context to its target market participant.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+</th>
+<td>
+<span>
+<a href="#ExchangeContext">Exchange Context</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/EnergyRoleOntology/MarketParticipant">role:MarketParticipant</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="isEvaluationPointOf">
+<h3>is evaluation point of
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/EnergyDataSetOntology/isEvaluationPointOf</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/EnergyDataSetOntology/">eds:</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Links the evaluation point to a specific data set.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+</th>
+<td>
+<span>
+<a href="#EvaluationPoint">Evaluation Point</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -1324,9 +1184,55 @@ td {
 </th>
 <td>
 <span>
-<a href="#System">System</a>
+<a href="#TechnicalContext">Technical Context</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="includesSchedule">
+<h3>includes schedule
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/EnergyDataSetOntology/includesSchedule</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/EnergyDataSetOntology/">eds:</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Links the technical context to a specific schedule.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+</th>
+<td>
+<span>
+<a href="#TechnicalContext">Technical Context</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/SchedulingOntology/Schedule">sch:Schedule</a>
 </td>
 </tr>
 </table>
@@ -1339,7 +1245,7 @@ td {
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/InfrastructureOntology/includesProperty</code>
+<code>https://w3id.org/omega-x/EnergyDataSetOntology/includesProperty</code>
 </td>
 </tr>
 <tr>
@@ -1347,14 +1253,14 @@ td {
 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
 </th>
 <td>
-<a href="https://w3id.org/omega-x/InfrastructureOntology/">infra:</a>
+<a href="https://w3id.org/omega-x/EnergyDataSetOntology/">eds:</a>
 </td>
 </tr>
 <tr>
 <th>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </th>
-<td><p>This property permits to link a system configuration to its properties.</p></td>
+<td><p>Links the technical context to all property covered by a data set.</p></td>
 </tr>
 <tr>
 <th>
@@ -1362,7 +1268,7 @@ td {
 </th>
 <td>
 <span>
-<a href="#SystemConfiguration">System Configuration</a>
+<a href="#TechnicalContext">Technical Context</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -1373,52 +1279,6 @@ td {
 </th>
 <td>
 <a href="https://w3id.org/omega-x/PropertyOntology/Property">prop:Property</a>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="isAssociatedWith">
-<h3>is associated with
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>https://w3id.org/omega-x/InfrastructureOntology/isAssociatedWith</code>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
-</th>
-<td>
-<a href="https://w3id.org/omega-x/InfrastructureOntology/">infra:</a>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-</th>
-<td><p>This property permits to associate a system with its market participant.</p></td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-</th>
-<td>
-<span>
-<a href="#System">System</a>
-<sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-</th>
-<td>
-<a href="https://w3id.org/omega-x/EnergyRoleOntology/MarketParticipant">role:MarketParticipant</a>
 </td>
 </tr>
 </table>
@@ -1434,7 +1294,7 @@ td {
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/InfrastructureOntology/identifier</code>
+<code>https://w3id.org/omega-x/EnergyDataSetOntology/identifier</code>
 </td>
 </tr>
 <tr>
@@ -1442,25 +1302,124 @@ td {
 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
 </th>
 <td>
-<a href="https://w3id.org/omega-x/InfrastructureOntology/">infra:</a>
+<a href="https://w3id.org/omega-x/EnergyDataSetOntology/">eds:</a>
 </td>
 </tr>
 <tr>
 <th>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </th>
-<td><p>The identifier of a system.</p></td>
+<td><p>The identifier of a technical context, buiness context, or an EvaluationPoint.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+</th>
+<td><span>
+<a href="#ExchangeContext">Exchange Context</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+<a href="#TechnicalContext">Technical Context</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+<a href="#EvaluationPoint">Evaluation Point</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span></td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="valueDataType">
+<h3>value data type
+            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/EnergyDataSetOntology/valueDataType</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/EnergyDataSetOntology/">eds:</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Data type (integer, decimal, boolean, string ...) of the values contained in the energy data set.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+</th>
+<td>
+<span>
+<a href="#TechnicalContext">Technical Context</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="build">
+<h3>build
+            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/EnergyDataSetOntology/build</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/EnergyDataSetOntology/">eds:</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The building version or time or reference of an energy data set.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+</th>
+<td>
+<span>
+<a href="#EnergyDataSet">Energy Data Set</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
 </tr>
 </table>
 </div>
 </div>
+<span>
+<a href="#TechnicalContext">Technical Context</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+<span>
+<a href="#ExchangeContext">Exchange Context</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+<span>
+<a href="#EvaluationPoint">Evaluation Point</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
 <div id="namespaces">
 <h2>Namespaces</h2>
 <dl>
-<dt id="bot">bot</dt>
-<dd>
-<code>https://w3id.org/bot#</code>
-</dd>
 <dt id="dcterms">dcterms</dt>
 <dd>
 <code>http://purl.org/dc/terms/</code>
@@ -1469,13 +1428,13 @@ td {
 <dd>
 <code>https://w3id.org/omega-x/EnergyDataSetOntology/</code>
 </dd>
+<dt id="ets">ets</dt>
+<dd>
+<code>https://w3id.org/omega-x/EventTimeSeriesOntology/</code>
+</dd>
 <dt id="foaf">foaf</dt>
 <dd>
 <code>http://xmlns.com/foaf/0.1/</code>
-</dd>
-<dt id="infra">infra</dt>
-<dd>
-<code>https://w3id.org/omega-x/InfrastructureOntology/</code>
 </dd>
 <dt id="owl">owl</dt>
 <dd>
@@ -1501,13 +1460,13 @@ td {
 <dd>
 <code>https://w3id.org/omega-x/EnergyRoleOntology/</code>
 </dd>
+<dt id="sch">sch</dt>
+<dd>
+<code>https://w3id.org/omega-x/SchedulingOntology/</code>
+</dd>
 <dt id="schema">schema</dt>
 <dd>
 <code>https://schema.org/</code>
-</dd>
-<dt id="seas">seas</dt>
-<dd>
-<code>https://w3id.org/seas/</code>
 </dd>
 <dt id="vann">vann</dt>
 <dd>
@@ -1540,6 +1499,140 @@ td {
 </div>
 </div>
 
-
+<div id="toc">
+<h3>Table of Contents</h3>
+<ul class="first">
+<li>
+<h4>
+<a href="#metadata">Metadata</a>
+</h4>
+</li>
+<li>
+<h4>
+<a href="#classes">Classes</a>
+</h4>
+<ul class="second">
+<li>
+<a href="#ExchangeContext">Exchange Context</a>
+</li>
+<li>
+<a href="#EnergyDataSet">Energy Data Set</a>
+</li>
+<li>
+<a href="#EvaluationPoint">Evaluation Point</a>
+</li>
+<li>
+<a href="#TechnicalContext">Technical Context</a>
+</li>
+</ul>
+</li>
+<li>
+<h4>
+<a href="#objectproperties">Object Properties</a>
+</h4>
+<ul class="second">
+<li>
+<a href="#isExchangedIn">is exchanged in</a>
+</li>
+<li>
+<a href="#exchanges">exchanges</a>
+</li>
+<li>
+<a href="#includesTechnicalContext">includes technical context</a>
+</li>
+<li>
+<a href="#isTechnicalContextOf">is technical context of</a>
+</li>
+<li>
+<a href="#includesEvaluationPoint">includes evaluation point</a>
+</li>
+<li>
+<a href="#fromSource">from source</a>
+</li>
+<li>
+<a href="#toTarget">to target</a>
+</li>
+<li>
+<a href="#isEvaluationPointOf">is evaluation point of</a>
+</li>
+<li>
+<a href="#includesSchedule">includes schedule</a>
+</li>
+<li>
+<a href="#includesProperty">includes property</a>
+</li>
+</ul>
+</li>
+<li>
+<h4>
+<a href="#datatypeproperties">Datatype Properties</a>
+</h4>
+<ul class="second">
+<li>
+<a href="#identifier">identifier</a>
+</li>
+<li>
+<a href="#valueDataType">value data type</a>
+</li>
+<li>
+<a href="#build">build</a>
+</li>
+</ul>
+</li>
+<li>
+<h4>
+<a href="#namespaces">Namespaces</a>
+</h4>
+<ul class="second">
+<li>
+<a href="#dcterms">dcterms</a>
+</li>
+<li>
+<a href="#eds">eds</a>
+</li>
+<li>
+<a href="#ets">ets</a>
+</li>
+<li>
+<a href="#foaf">foaf</a>
+</li>
+<li>
+<a href="#owl">owl</a>
+</li>
+<li>
+<a href="#prop">prop</a>
+</li>
+<li>
+<a href="#prov">prov</a>
+</li>
+<li>
+<a href="#rdf">rdf</a>
+</li>
+<li>
+<a href="#rdfs">rdfs</a>
+</li>
+<li>
+<a href="#role">role</a>
+</li>
+<li>
+<a href="#sch">sch</a>
+</li>
+<li>
+<a href="#schema">schema</a>
+</li>
+<li>
+<a href="#vann">vann</a>
+</li>
+</ul>
+</li>
+<li>
+<h4>
+<a href="#legend">Legend</a>
+</h4>
+<ul class="second"></ul>
+</li>
+</ul>
+</div>
 </body>
 </html>
+</body></html>

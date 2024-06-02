@@ -1,54 +1,8 @@
-<h1>Domain Ontology: Property</h1>
-<h2>Description</h2>
-<p><code>Property</code>, or <code>Prop</code>, is a domain level module of the Common Semantic Data Model (CSDM). It provides a taxonomy of energy domain properties. 
-The scope of this module extends also to the definition of units and categories associated with properties, and used for values definition.</p>
-<h2>Competency Questions</h2>
-<h3>Querying Questions</h3>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Question in natural language</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>cq-1</td>
-<td>What are possible values to be associated with a qualitative property ?</td>
-<td>Possible values for a qualitative property include the set of values defined in the category in which it is evaluated.</td>
-</tr>
-<tr>
-<td>cq-2</td>
-<td>What are possible properties that can be associated with a unit of measurement ?</td>
-<td>EUR-PER-KiloW-HR is a unit of measurement that can be used for energySellingprice, EnergyBuyingPrice,...</td>
-</tr>
-<tr>
-<td>cq-3</td>
-<td>What are possible units for measuring a property ?</td>
-<td>Temperature property can be measured in Celsus Degrees,  Fahrenheit degrees,...</td>
-</tr>
-</tbody>
-</table>
-<h2>Glossary</h2>
-<h2>OWL Description</h2>
-<p><img alt="Diagram" src="./Diagram.png"/></p>
-<h2>Recommendations</h2>
-<ul>
-<li>
-<p>A <code>prop:Property</code> is the upper class for the omega-X property taxonomy. It is further distinguished into <code>prop:QuantitativeProperty</code> for properties to which numerical values are assigned (<code>prop:Temperature</code> has as possible values <code>18</code>, <code>19</code>,..), and <code>prop:QualitativeProperty</code> for properties with values defined in a category (eg. <code>prop:OperatingStatus</code> has as possible values <code>On</code> and <code>Off</code>). </p>
-</li>
-<li>
-<p>The evaluation of properties is described in <code>Event and Time Series</code> module, through the <code>ets:PropertyValue</code> class . For dyamic values (chaning over time), a <code>ets:ValueSet</code> is created with the entire set of values, following a <code>ets:TemporalContext</code>. For static values (stable in time), the object property <code>prop:hasPropertyValue</code> enables to indicate one value per property.</p>
-</li>
-<li>
-<p>Categorical individuals of type <code>prop:Category</code> are used as property values <code>ets:PropertyValue</code> in case of qualitative Datasets.</p>
-</li>
-</ul><!DOCTYPE html>
+<html><head></head><body><!DOCTYPE html>
 
 <html>
 <head>
-<title>Property</title>
+<title>Scheduling Ontology</title>
 <style>
         #pylode {
             position: fixed;
@@ -330,25 +284,21 @@ td {
 <script id="schema.org" type="application/ld+json">
 [
   {
-    "@id": "https://w3id.org/omega-x/PropertyOntology",
+    "@id": "https://w3id.org/omega-x/SchedulingOntology",
     "@type": [
       "https://schema.org/DefinedTermSet"
     ],
     "https://schema.org/contributor": [
       {
-        "@id": "_:nc1836417cb5b432ab73ca48799d388a2b1"
+        "@id": "_:nf3e183c5d11749a19fbdd7c11ea12284b1"
       },
       {
-        "@id": "_:nc1836417cb5b432ab73ca48799d388a2b2"
-      },
-      {
-        "@id": "_:nc1836417cb5b432ab73ca48799d388a2b3"
+        "@id": "_:nf3e183c5d11749a19fbdd7c11ea12284b2"
       }
     ],
     "https://schema.org/copyrightNotice": [
       {
-        "@language": "en",
-        "@value": "Copyright  Omega-X Consortium 2022-2025"
+        "@value": "Copyright © Omega-X Consortium 2022-2025"
       }
     ],
     "https://schema.org/creator": [
@@ -359,59 +309,52 @@ td {
     "https://schema.org/dateCreated": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-03-08"
+        "@value": "2024-15-03"
       }
     ],
     "https://schema.org/dateIssued": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-05-07"
+        "@value": "2024-05-06"
       }
     ],
     "https://schema.org/dateModified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-04-30"
+        "@value": "2024-05-03"
       }
     ],
     "https://schema.org/description": [
       {
         "@language": "en",
-        "@value": "The property ontology is a common module of the CSDM designed to provide a structured taxonomy for the properties of the energy domain.\r\n                                             It distinguishes two type of properties: \r\n                                             - Quantitative properties: physical quantities associated to numerical values and unit of measures. \r\n                                             - Qualitative properties: characteristics of real-world evaluated using non numerical categorical values.  \r\n                                             The property ontology presents a taxonomy of properties for which values (static or dynamic) are defined using Events and Time Series Module.\r\n                                             "
+        "@value": "This Scheduling Ontology helps to represent a schedule, which organizes and arranges events or activities according to specific dates, times, and other relevant parameters."
+      }
+    ],
+    "https://schema.org/license": [
+      {
+        "@id": "https://opensource.org/license/mit/"
       }
     ],
     "https://schema.org/name": [
       {
         "@language": "en",
-        "@value": "Property ontology"
-      },
-      {
-        "@language": "en",
-        "@value": "Property"
+        "@value": "Scheduling Ontology"
       }
     ]
   },
   {
-    "@id": "_:nc1836417cb5b432ab73ca48799d388a2b1",
+    "@id": "_:nf3e183c5d11749a19fbdd7c11ea12284b1",
     "https://schema.org/name": [
       {
-        "@value": "Fatma-Zohra Hannou"
+        "@value": "Henon M. Lamboro"
       }
     ]
   },
   {
-    "@id": "_:nc1836417cb5b432ab73ca48799d388a2b2",
+    "@id": "_:nf3e183c5d11749a19fbdd7c11ea12284b2",
     "https://schema.org/name": [
       {
-        "@value": "Lina Nachabe"
-      }
-    ]
-  },
-  {
-    "@id": "_:nc1836417cb5b432ab73ca48799d388a2b3",
-    "https://schema.org/name": [
-      {
-        "@value": "Maxime Lefranois"
+        "@value": "Maxime Lefrançois"
       }
     ]
   }
@@ -421,7 +364,7 @@ td {
 <body>
 <div id="content">
 <div class="section" id="metadata">
-<h1>Property ontologyProperty</h1>
+<h1>Scheduling Ontology</h1>
 <h2>Metadata</h2>
 <dl>
 <div>
@@ -429,19 +372,14 @@ td {
 <strong>IRI</strong>
 </dt>
 <dd>
-<code>https://w3id.org/omega-x/PropertyOntology</code>
+<code>https://w3id.org/omega-x/SchedulingOntology</code>
 </dd>
 </div>
 <div>
 <dt>
 <a class="hover_property" href="http://purl.org/dc/terms/title" title="A name given to the resource. Defined in DCMI Metadata Terms">Title</a>
 </dt>
-<dd>
-<ul>
-<li><p>Property ontology</p></li>
-<li><p>Property</p></li>
-</ul>
-</dd>
+<dd><p>Scheduling Ontology</p></dd>
 </div>
 <div>
 <dt>
@@ -457,17 +395,12 @@ td {
 <ul>
 <li>
 <span>
-<span>Fatma-Zohra Hannou</span>
+<span>Henon M. Lamboro</span>
 </span>
 </li>
 <li>
 <span>
-<span>Lina Nachabe</span>
-</span>
-</li>
-<li>
-<span>
-<span>Maxime Lefranois</span>
+<span>Maxime Lefrançois</span>
 </span>
 </li>
 </ul>
@@ -477,77 +410,205 @@ td {
 <dt>
 <a class="hover_property" href="http://purl.org/dc/terms/created" title="Date of creation of the resource. Defined in DCMI Metadata Terms">Date Created</a>
 </dt>
-<dd><p>2024-03-08</p></dd>
+<dd><p>2024-15-03</p></dd>
 </div>
 <div>
 <dt>
 <a class="hover_property" href="http://purl.org/dc/terms/modified" title="Date on which the resource was changed. Defined in DCMI Metadata Terms">Date Modified</a>
 </dt>
-<dd><p>2024-04-30</p></dd>
+<dd><p>2024-05-03</p></dd>
 </div>
 <div>
 <dt>
 <a class="hover_property" href="http://purl.org/dc/terms/issued" title="Date of formal issuance of the resource. Defined in DCMI Metadata Terms">Date Issued</a>
 </dt>
-<dd><p>2024-05-07</p></dd>
+<dd><p>2024-05-06</p></dd>
+</div>
+<div>
+<dt>
+<a class="hover_property" href="http://purl.org/dc/terms/license" title="A legal document giving official permission to do something with the resource. Defined in DCMI Metadata Terms">License</a>
+</dt>
+<dd>
+<a href="https://opensource.org/license/mit/">https://opensource.org/license/mit/</a>
+</dd>
 </div>
 <div>
 <dt>
 <a class="hover_property" href="http://purl.org/dc/terms/rights" title="Information about rights held in and over the resource. Defined in DCMI Metadata Terms">Rights</a>
 </dt>
-<dd><p>Copyright  Omega-X Consortium 2022-2025</p></dd>
+<dd><p>Copyright © Omega-X Consortium 2022-2025</p></dd>
 </div>
 <div>
 <dt>
 <a class="hover_property" href="http://www.w3.org/2002/07/owl#versionIRI" title="The property that identifies the version IRI of an ontology. Defined in The OWL 2 Schema vocabulary (OWL 2)">Version Iri</a>
 </dt>
 <dd>
-<a href="#PropertyOntology-1.0">https://w3id.org/omega-x/PropertyOntology-1.0</a>
+<a href="https://w3id.org/omega-x/SchedulingOntology-1.0">omegax:SchedulingOntology-1.0</a>
 </dd>
 </div>
 <div>
 <dt>
 <a class="hover_property" href="http://www.w3.org/2002/07/owl#versionInfo" title="The annotation property that provides version information for an ontology or another OWL construct. Defined in The OWL 2 Schema vocabulary (OWL 2)">Version Info</a>
 </dt>
-<dd><p>1.0</p></dd>
+<dd><p>v1.0</p></dd>
 </div>
 <div>
 <dt>
 <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespacePrefix" title="None. Defined in None">Preferred Namespace Prefix</a>
 </dt>
-<dd><p>prop</p></dd>
+<dd><p>sched</p></dd>
 </div>
 <div>
 <dt>
 <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespaceUri" title="None. Defined in None">Preferred Namespace Uri</a>
 </dt>
 <dd>
-<a href="#PropertyOntology">Property ontology</a>
+<a href="https://w3id.org/omega-x/SchedulingOntology/">https://w3id.org/omega-x/SchedulingOntology/</a>
 </dd>
 </div>
 <div>
 <dt>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </dt>
-<dd><p>The property ontology is a common module of the CSDM designed to provide a structured taxonomy for the properties of the energy domain.
-                                             It distinguishes two type of properties: 
-                                             - Quantitative properties: physical quantities associated to numerical values and unit of measures. 
-                                             - Qualitative properties: characteristics of real-world evaluated using non numerical categorical values.<br/>
-                                             The property ontology presents a taxonomy of properties for which values (static or dynamic) are defined using Events and Time Series Module.</p></dd>
+<dd><p>This Scheduling Ontology helps to represent a schedule, which organizes and arranges events or activities according to specific dates, times, and other relevant parameters.</p></dd>
 </div>
 </dl>
 </div>
 <div class="section" id="classes">
 <h2>Classes</h2>
-<div class="property entity" id="TemporalEntity">
-<h3>Temporal Entity
+<div class="property entity" id="Schedule">
+<h3>Schedule
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </h3>
 <table>
 <tr>
 <th>IRI</th>
 <td>
-<code>http://www.w3.org/2006/time#TemporalEntity</code>
+<code>https://w3id.org/omega-x/SchedulingOntology#Schedule</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>A schedule is a plan of performing a specific task. In the energy domain, schedule can be used to manage energy consumption, production activities to optimize efficiency and define value sets in systema or a services </p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="https://w3id.org/omega-x/SchedulingOntology#hasCreator">has creator</a>
+<sup class="sup-op" title="OWL Object Property">op</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="https://w3id.org/omega-x/SchedulingOntology#isAbout">is about</a>
+<sup class="sup-op" title="OWL Object Property">op</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="https://w3id.org/omega-x/SchedulingOntology#isDescribedBy">is described by</a>
+<sup class="sup-op" title="OWL Object Property">op</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="https://w3id.org/omega-x/SchedulingOntology#isScheduledFor">is scheduled for</a>
+<sup class="sup-op" title="OWL Object Property">op</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="https://w3id.org/omega-x/SchedulingOntology#isValidDuring">is valid during</a>
+<sup class="sup-op" title="OWL Object Property">op</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="https://w3id.org/omega-x/SchedulingOntology#createdOn">created on</a>
+<sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="https://w3id.org/omega-x/SchedulingOntology#hasPeriodicity">has periodicity</a>
+<sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="https://w3id.org/omega-x/SchedulingOntology#identifier">identifier</a>
+<sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="MarketParticipant">
+<h3>Market Participant
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/EnergyRoleOntology/MarketParticipant</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+</th>
+<td>
+<span>
+<a href="https://w3id.org/omega-x/SchedulingOntology#hasCreator">has creator</a>
+<sup class="sup-op" title="OWL Object Property">op</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ValueSet">
+<h3>Value Set
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/EventTimeSeriesOntology/ValueSet</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+</th>
+<td>
+<span>
+<a href="https://w3id.org/omega-x/SchedulingOntology#isDescribedBy">is described by</a>
+<sup class="sup-op" title="OWL Object Property">op</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="System">
+<h3>System
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/InfrastructureOntology/System</code>
 </td>
 </tr>
 </table>
@@ -565,19 +626,26 @@ td {
 </tr>
 <tr>
 <th>
-<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-</th>
-<td><p>A characteristic of the real world that can be observed.</p></td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
 </th>
 <td>
 <span>
-<a href="#hasPropertyValue">Has Property Value</a>
+<a href="https://w3id.org/omega-x/SchedulingOntology#isAbout">is about</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="DateTimeInterval">
+<h3>Date Time Interval
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>http://www.w3.org/2006/time#DateTimeInterval</code>
 </td>
 </tr>
 <tr>
@@ -586,199 +654,7 @@ td {
 </th>
 <td>
 <span>
-<a href="#isAboutProperty">Is About Property</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
-</th>
-<td>
-<ul>
-<li>
-<span>
-<a href="#QuantitativeProperty">Quantitative property</a>
-<sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span>
-</li>
-<li>
-<span>
-<a href="#QualitativeProperty">Qualitative Property</a>
-<sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span>
-</li>
-</ul>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="QuantitativeProperty">
-<h3>Quantitative property
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>https://w3id.org/omega-x/PropertyOntology/QuantitativeProperty</code>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-</th>
-<td><p>Physical quantities associated to numerical values and unit of measures</p></td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-</th>
-<td>
-<span>
-<a href="#Property">Property</a>
-<sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-</th>
-<td>
-<span>
-<a href="#isMeasuredIn">Is Measured In</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="QualitativeProperty">
-<h3>Qualitative Property
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>https://w3id.org/omega-x/PropertyOntology/QualitativeProperty</code>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-</th>
-<td><p>A qualitative property is a characteristic of real world with possible values defined by a defined category. Qualitative properties have non numerical values.</p></td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-</th>
-<td>
-<span>
-<a href="#Property">Property</a>
-<sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-</th>
-<td>
-<span>
-<a href="#isEvaluatedIn">Is Evaluated In</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="Unit">
-<h3>Unit
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>https://w3id.org/omega-x/PropertyOntology/Unit</code>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-</th>
-<td><p>A standard of measurement for quantities.</p></td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
-</th>
-<td>
-<span>
-<a href="#isUsedIn">Is Used In</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-</th>
-<td>
-<ul>
-<li>
-<span>
-<a href="#isMeasuredIn">Is Measured In</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-</li>
-<li>
-<span>
-<a href="#hasUnit">Has Unit</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-</li>
-</ul>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="Category">
-<h3>Category
-            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>https://w3id.org/omega-x/PropertyOntology/Category</code>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-</th>
-<td><p>A class of categories, used to enumerate possible values of qualitative properties.</p></td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
-</th>
-<td>
-<a href="https://w3id.org/omega-x/EventTimeSeriesOntology/PropertyValue">ets:PropertyValue</a>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
-</th>
-<td>
-<span>
-<a href="#isEvaluatedIn">Is Evaluated In</a>
+<a href="https://w3id.org/omega-x/SchedulingOntology#isValidDuring">is valid during</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 </td>
@@ -788,22 +664,22 @@ td {
 </div>
 <div class="section" id="objectproperties">
 <h2>Object Properties</h2>
-<div class="property entity" id="isMeasuredIn">
-<h3>Is Measured In
+<div class="property entity" id="hascreator">
+<h3>has creator
             <sup class="sup-op" title="OWL Object Property">op</sup>
 </h3>
 <table>
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/PropertyOntology/isMeasuredIn</code>
+<code>https://w3id.org/omega-x/SchedulingOntology#hasCreator</code>
 </td>
 </tr>
 <tr>
 <th>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </th>
-<td><p>The property that associates a quantitative property with its measurement unit.</p></td>
+<td><p>Specifies the creator or author of the schedule. The creator is typically a market participant involved in creating or managing the schedule.</p></td>
 </tr>
 <tr>
 <th>
@@ -811,7 +687,7 @@ td {
 </th>
 <td>
 <span>
-<a href="#QuantitativeProperty">Quantitative property</a>
+<a href="https://w3id.org/omega-x/SchedulingOntology#Schedule">Schedule</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -822,29 +698,29 @@ td {
 </th>
 <td>
 <span>
-<a href="#Unit">Unit</a>
+<a href="https://w3id.org/omega-x/EnergyRoleOntology/MarketParticipant">role:MarketParticipant</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
 </tr>
 </table>
 </div>
-<div class="property entity" id="isEvaluatedIn">
-<h3>Is Evaluated In
+<div class="property entity" id="isabout">
+<h3>is about
             <sup class="sup-op" title="OWL Object Property">op</sup>
 </h3>
 <table>
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/PropertyOntology/isEvaluatedIn</code>
+<code>https://w3id.org/omega-x/SchedulingOntology#isAbout</code>
 </td>
 </tr>
 <tr>
 <th>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </th>
-<td><p>The property that links a qualitative property with the category it is evaluated in.</p></td>
+<td><p>Indicates that the schedule is related to or concerns a specific property.</p></td>
 </tr>
 <tr>
 <th>
@@ -852,7 +728,7 @@ td {
 </th>
 <td>
 <span>
-<a href="#QualitativeProperty">Qualitative Property</a>
+<a href="https://w3id.org/omega-x/SchedulingOntology#Schedule">Schedule</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -863,29 +739,29 @@ td {
 </th>
 <td>
 <span>
-<a href="#Category">Category</a>
+<a href="https://w3id.org/omega-x/PropertyOntology/Property">prop:Property</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
 </tr>
 </table>
 </div>
-<div class="property entity" id="hasPropertyValue">
-<h3>Has Property Value
+<div class="property entity" id="isdescribedby">
+<h3>is described by
             <sup class="sup-op" title="OWL Object Property">op</sup>
 </h3>
 <table>
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/PropertyOntology/hasPropertyValue</code>
+<code>https://w3id.org/omega-x/SchedulingOntology#isDescribedBy</code>
 </td>
 </tr>
 <tr>
 <th>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </th>
-<td><p>The link that enables to indicate a value for a property.</p></td>
+<td><p>Specifies the value set or collection of values that is describes. This property links the schedule to the set of values it represents.</p></td>
 </tr>
 <tr>
 <th>
@@ -893,37 +769,10 @@ td {
 </th>
 <td>
 <span>
-<a href="#Property">Property</a>
+<a href="https://w3id.org/omega-x/SchedulingOntology#Schedule">Schedule</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-</th>
-<td>
-<a href="https://w3id.org/omega-x/EventTimeSeriesOntology/PropertyValue">ets:PropertyValue</a>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="isAboutProperty">
-<h3>Is About Property
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>https://w3id.org/omega-x/PropertyOntology/isAboutProperty</code>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-</th>
-<td><p>The link that enables to identify which property is evaluated by the property value.</p></td>
 </tr>
 <tr>
 <th>
@@ -931,29 +780,29 @@ td {
 </th>
 <td>
 <span>
-<a href="#Property">Property</a>
+<a href="https://w3id.org/omega-x/EventTimeSeriesOntology/ValueSet">ets:ValueSet</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
 </tr>
 </table>
 </div>
-<div class="property entity" id="isUsedIn">
-<h3>Is Used In
+<div class="property entity" id="isscheduledfor">
+<h3>is scheduled for
             <sup class="sup-op" title="OWL Object Property">op</sup>
 </h3>
 <table>
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/PropertyOntology/isUsedIn</code>
+<code>https://w3id.org/omega-x/SchedulingOntology#isScheduledFor</code>
 </td>
 </tr>
 <tr>
 <th>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </th>
-<td><p>The link that indicates in which property value the unit is used.</p></td>
+<td><p>Indicates that a schedule is scheduled for a particular entity such as systems or services</p></td>
 </tr>
 <tr>
 <th>
@@ -961,37 +810,10 @@ td {
 </th>
 <td>
 <span>
-<a href="#Unit">Unit</a>
+<a href="https://w3id.org/omega-x/SchedulingOntology#Schedule">Schedule</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-</th>
-<td>
-<a href="https://w3id.org/omega-x/EventTimeSeriesOntology/PropertyValue">ets:PropertyValue</a>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="hasUnit">
-<h3>Has Unit
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>https://w3id.org/omega-x/PropertyOntology/hasUnit</code>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-</th>
-<td><p>The link that indicates what unit is used for a specific property Value.</p></td>
 </tr>
 <tr>
 <th>
@@ -999,9 +821,171 @@ td {
 </th>
 <td>
 <span>
-<a href="#Unit">Unit</a>
+<span>
+<span>
+<a href="https://w3id.org/omega-x/SchedulingOntology#isScheduledFor">is scheduled for</a>
+<sup class="sup-op" title="OWL Object Property">op</sup>
+</span>some<br/>
+</span>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="isvalidduring">
+<h3>is valid during
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/SchedulingOntology#isValidDuring</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Specifies the time interval during which the schedule is considered valid or applicable. This property links the schedule to the duration of its effectiveness.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+</th>
+<td>
+<span>
+<a href="https://w3id.org/omega-x/SchedulingOntology#Schedule">Schedule</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+</th>
+<td>
+<span>
+<a href="http://www.w3.org/2006/time#DateTimeInterval">time:DateTimeInterval</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="section" id="datatypeproperties">
+<h2>Datatype Properties</h2>
+<div class="property entity" id="createdon">
+<h3>created on
+            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/SchedulingOntology#createdOn</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Specifies the date and time when the schedule was created or initiated. This property records the timestamp of the schedule's creation.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+</th>
+<td>
+<span>
+<a href="https://w3id.org/omega-x/SchedulingOntology#Schedule">Schedule</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+</th>
+<td>
+<a href="http://www.w3.org/2001/XMLSchema#dateTime">xsd:dateTime</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="hasperiodicity">
+<h3>has periodicity
+            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/SchedulingOntology#hasPeriodicity</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Specifies the periodicity or recurrence pattern of the schedule. This property defines the frequency at which the schedule's events or activities repeat over time.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+</th>
+<td>
+<span>
+<a href="https://w3id.org/omega-x/SchedulingOntology#Schedule">Schedule</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/SchedulingOntology#cron">cron</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="identifier">
+<h3>identifier
+            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/SchedulingOntology#identifier</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Specifies a unique identifier or code assigned to the schedule</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+</th>
+<td>
+<span>
+<a href="https://w3id.org/omega-x/SchedulingOntology#Schedule">Schedule</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+</th>
+<td>
+<a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>
 </td>
 </tr>
 </table>
@@ -1009,28 +993,15 @@ td {
 </div>
 <div class="section" id="annotationproperties">
 <h2>Annotation Properties</h2>
-<div class="property entity" id="contributor">
-<h3>contributor
+<div class="property entity" id="title">
+<h3>title
             <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
 </h3>
 <table>
 <tr>
 <th>IRI</th>
 <td>
-<code>http://purl.org/dc/terms/contributor</code>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="creator">
-<h3>creator
-            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>http://purl.org/dc/terms/creator</code>
+<code>http://purl.org/dc/terms/title</code>
 </td>
 </tr>
 </table>
@@ -1061,19 +1032,6 @@ td {
 </tr>
 </table>
 </div>
-<div class="property entity" id="license">
-<h3>license
-            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>http://purl.org/dc/terms/license</code>
-</td>
-</tr>
-</table>
-</div>
 <div class="property entity" id="modified">
 <h3>modified
             <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
@@ -1087,15 +1045,67 @@ td {
 </tr>
 </table>
 </div>
-<div class="property entity" id="title">
-<h3>title
+<div class="property entity" id="created">
+<h3>created
             <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
 </h3>
 <table>
 <tr>
 <th>IRI</th>
 <td>
-<code>http://purl.org/dc/terms/title</code>
+<code>http://purl.org/dc/terms/created</code>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="creator">
+<h3>creator
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>http://purl.org/dc/terms/creator</code>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="contributor">
+<h3>contributor
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>http://purl.org/dc/terms/contributor</code>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="license">
+<h3>license
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>http://purl.org/dc/terms/license</code>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="rights">
+<h3>rights
+            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>http://purl.org/dc/terms/rights</code>
 </td>
 </tr>
 </table>
@@ -1126,75 +1136,14 @@ td {
 </tr>
 </table>
 </div>
-<div class="property entity" id="maxQualifiedCardinality">
-<h3>max qualified cardinality
-            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>http://www.w3.org/2002/07/owl#maxQualifiedCardinality</code>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="qualifiedCardinality">
-<h3>qualified cardinality
-            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>http://www.w3.org/2002/07/owl#qualifiedCardinality</code>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="term_status">
-<h3>term_status
-            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>http://www.w3.org/2003/06/sw-vocab-status/ns#term_status</code>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="domainIncludes">
-<h3>domain includes
-            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>http://schema.org/domainIncludes</code>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="rangeIncludes">
-<h3>range includes
-            <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>http://schema.org/rangeIncludes</code>
-</td>
-</tr>
-</table>
-</div>
 </div>
 <div id="namespaces">
 <h2>Namespaces</h2>
 <dl>
+<dt id=":">:</dt>
+<dd>
+<code>https://w3id.org/omega-x/SchedulingOntology/</code>
+</dd>
 <dt id="dcterms">dcterms</dt>
 <dd>
 <code>http://purl.org/dc/terms/</code>
@@ -1206,6 +1155,14 @@ td {
 <dt id="foaf">foaf</dt>
 <dd>
 <code>http://xmlns.com/foaf/0.1/</code>
+</dd>
+<dt id="infra">infra</dt>
+<dd>
+<code>https://w3id.org/omega-x/InfrastructureOntology/</code>
+</dd>
+<dt id="omegax">omegax</dt>
+<dd>
+<code>https://w3id.org/omega-x/</code>
 </dd>
 <dt id="owl">owl</dt>
 <dd>
@@ -1227,13 +1184,17 @@ td {
 <dd>
 <code>http://www.w3.org/2000/01/rdf-schema#</code>
 </dd>
+<dt id="role">role</dt>
+<dd>
+<code>https://w3id.org/omega-x/EnergyRoleOntology/</code>
+</dd>
+<dt id="sched">sched</dt>
+<dd>
+<code>https://w3id.org/omega-x/SchedulingOntology#</code>
+</dd>
 <dt id="schema">schema</dt>
 <dd>
 <code>https://schema.org/</code>
-</dd>
-<dt id="schema1">schema1</dt>
-<dd>
-<code>http://schema.org/</code>
 </dd>
 <dt id="time">time</dt>
 <dd>
@@ -1243,9 +1204,9 @@ td {
 <dd>
 <code>http://purl.org/vocab/vann/</code>
 </dd>
-<dt id="vs">vs</dt>
+<dt id="xsd">xsd</dt>
 <dd>
-<code>http://www.w3.org/2003/06/sw-vocab-status/ns#</code>
+<code>http://www.w3.org/2001/XMLSchema#</code>
 </dd>
 </dl>
 </div>
@@ -1266,6 +1227,12 @@ td {
 </tr>
 <tr>
 <td>
+<sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+</td>
+<td>Datatype Properties</td>
+</tr>
+<tr>
+<td>
 <sup class="sup-ap" title="OWL Annotation Property">ap</sup>
 </td>
 <td>Annotation Properties</td>
@@ -1274,6 +1241,183 @@ td {
 </div>
 </div>
 
-
+<div id="toc">
+<h3>Table of Contents</h3>
+<ul class="first">
+<li>
+<h4>
+<a href="#metadata">Metadata</a>
+</h4>
+</li>
+<li>
+<h4>
+<a href="#classes">Classes</a>
+</h4>
+<ul class="second">
+<li>
+<a href="#Schedule">Schedule</a>
+</li>
+<li>
+<a href="#MarketParticipant">Market Participant</a>
+</li>
+<li>
+<a href="#ValueSet">Value Set</a>
+</li>
+<li>
+<a href="#System">System</a>
+</li>
+<li>
+<a href="#Property">Property</a>
+</li>
+<li>
+<a href="#DateTimeInterval">Date Time Interval</a>
+</li>
+</ul>
+</li>
+<li>
+<h4>
+<a href="#objectproperties">Object Properties</a>
+</h4>
+<ul class="second">
+<li>
+<a href="#hascreator">has creator</a>
+</li>
+<li>
+<a href="#isabout">is about</a>
+</li>
+<li>
+<a href="#isdescribedby">is described by</a>
+</li>
+<li>
+<a href="#isscheduledfor">is scheduled for</a>
+</li>
+<li>
+<a href="#isvalidduring">is valid during</a>
+</li>
+</ul>
+</li>
+<li>
+<h4>
+<a href="#datatypeproperties">Datatype Properties</a>
+</h4>
+<ul class="second">
+<li>
+<a href="#createdon">created on</a>
+</li>
+<li>
+<a href="#hasperiodicity">has periodicity</a>
+</li>
+<li>
+<a href="#identifier">identifier</a>
+</li>
+</ul>
+</li>
+<li>
+<h4>
+<a href="#annotationproperties">Annotation Properties</a>
+</h4>
+<ul class="second">
+<li>
+<a href="#title">title</a>
+</li>
+<li>
+<a href="#description">description</a>
+</li>
+<li>
+<a href="#issued">issued</a>
+</li>
+<li>
+<a href="#modified">modified</a>
+</li>
+<li>
+<a href="#created">created</a>
+</li>
+<li>
+<a href="#creator">creator</a>
+</li>
+<li>
+<a href="#contributor">contributor</a>
+</li>
+<li>
+<a href="#license">license</a>
+</li>
+<li>
+<a href="#rights">rights</a>
+</li>
+<li>
+<a href="#preferredNamespacePrefix">preferred namespace prefix</a>
+</li>
+<li>
+<a href="#preferredNamespaceUri">preferred namespace uri</a>
+</li>
+</ul>
+</li>
+<li>
+<h4>
+<a href="#namespaces">Namespaces</a>
+</h4>
+<ul class="second">
+<li>
+<a href="#"></a>
+</li>
+<li>
+<a href="#dcterms">dcterms</a>
+</li>
+<li>
+<a href="#ets">ets</a>
+</li>
+<li>
+<a href="#foaf">foaf</a>
+</li>
+<li>
+<a href="#infra">infra</a>
+</li>
+<li>
+<a href="#omegax">omegax</a>
+</li>
+<li>
+<a href="#owl">owl</a>
+</li>
+<li>
+<a href="#prop">prop</a>
+</li>
+<li>
+<a href="#prov">prov</a>
+</li>
+<li>
+<a href="#rdf">rdf</a>
+</li>
+<li>
+<a href="#rdfs">rdfs</a>
+</li>
+<li>
+<a href="#role">role</a>
+</li>
+<li>
+<a href="#sched">sched</a>
+</li>
+<li>
+<a href="#schema">schema</a>
+</li>
+<li>
+<a href="#time">time</a>
+</li>
+<li>
+<a href="#vann">vann</a>
+</li>
+<li>
+<a href="#xsd">xsd</a>
+</li>
+</ul>
+</li>
+<li>
+<h4>
+<a href="#legend">Legend</a>
+</h4>
+<ul class="second"></ul>
+</li>
+</ul>
+</div>
 </body>
 </html>
+</body></html>
