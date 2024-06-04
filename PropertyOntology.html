@@ -284,19 +284,19 @@ td {
 <script id="schema.org" type="application/ld+json">
 [
   {
-    "@id": "https://w3id.org/omega-x/PropertyOntology",
+    "@id": "https://w3id.org/omega-x/ontology/Property/",
     "@type": [
       "https://schema.org/DefinedTermSet"
     ],
     "https://schema.org/contributor": [
       {
-        "@id": "_:n863282645dc44e4f8d5b1b92c3d15b63b1"
+        "@id": "_:ne417b704aa9c4720885a065849d05aecb1"
       },
       {
-        "@id": "_:n863282645dc44e4f8d5b1b92c3d15b63b2"
+        "@id": "_:ne417b704aa9c4720885a065849d05aecb2"
       },
       {
-        "@id": "_:n863282645dc44e4f8d5b1b92c3d15b63b3"
+        "@id": "_:ne417b704aa9c4720885a065849d05aecb3"
       }
     ],
     "https://schema.org/copyrightNotice": [
@@ -346,7 +346,7 @@ td {
     ]
   },
   {
-    "@id": "_:n863282645dc44e4f8d5b1b92c3d15b63b1",
+    "@id": "_:ne417b704aa9c4720885a065849d05aecb1",
     "https://schema.org/name": [
       {
         "@value": "Fatma-Zohra Hannou"
@@ -354,7 +354,7 @@ td {
     ]
   },
   {
-    "@id": "_:n863282645dc44e4f8d5b1b92c3d15b63b2",
+    "@id": "_:ne417b704aa9c4720885a065849d05aecb2",
     "https://schema.org/name": [
       {
         "@value": "Lina Nachabe"
@@ -362,7 +362,7 @@ td {
     ]
   },
   {
-    "@id": "_:n863282645dc44e4f8d5b1b92c3d15b63b3",
+    "@id": "_:ne417b704aa9c4720885a065849d05aecb3",
     "https://schema.org/name": [
       {
         "@value": "Maxime Lefrançois"
@@ -383,7 +383,7 @@ td {
 <strong>IRI</strong>
 </dt>
 <dd>
-<code>https://w3id.org/omega-x/PropertyOntology</code>
+<code>https://w3id.org/omega-x/ontology/Property/</code>
 </dd>
 </div>
 <div>
@@ -456,7 +456,7 @@ td {
 <a class="hover_property" href="http://www.w3.org/2002/07/owl#versionIRI" title="The property that identifies the version IRI of an ontology. Defined in The OWL 2 Schema vocabulary (OWL 2)">Version Iri</a>
 </dt>
 <dd>
-<a href="#PropertyOntology-1.0">https://w3id.org/omega-x/PropertyOntology-1.0</a>
+<a href="https://w3id.org/omega-x/ontology/Property-1.0/">https://w3id.org/omega-x/ontology/Property-1.0/</a>
 </dd>
 </div>
 <div>
@@ -476,7 +476,7 @@ td {
 <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespaceUri" title="None. Defined in None">Preferred Namespace Uri</a>
 </dt>
 <dd>
-<a href="#PropertyOntology">Property ontology</a>
+<a href="#Property">https://w3id.org/omega-x/ontology/Property</a>
 </dd>
 </div>
 <div>
@@ -506,7 +506,7 @@ td {
 </tr>
 </table>
 </div>
-<div class="property entity" id="Property">
+<div class="property entity" id="Property1">
 <h3>Property
             <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </h3>
@@ -514,7 +514,7 @@ td {
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/PropertyOntology/Property</code>
+<code>https://w3id.org/omega-x/ontology/Property/Property</code>
 </td>
 </tr>
 <tr>
@@ -563,6 +563,24 @@ td {
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </li>
+<li>
+<span>
+<a href="#transformerPower">Transformer Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#inverterProperty">Inverter Property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleProperty">Solar Module Property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
 </ul>
 </td>
 </tr>
@@ -576,7 +594,7 @@ td {
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/PropertyOntology/QuantitativeProperty</code>
+<code>https://w3id.org/omega-x/ontology/Property/QuantitativeProperty</code>
 </td>
 </tr>
 <tr>
@@ -591,7 +609,7 @@ td {
 </th>
 <td>
 <span>
-<a href="#Property">Property</a>
+<a href="#Property1">Property</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -607,6 +625,81 @@ td {
 </span>
 </td>
 </tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Voltage">Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#Energy">Energy</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#Power">Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#Temperature">Temperature</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#Current">Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#Resistance">Resistance</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#Irradiance">Irradiance</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#Frequency">Frequency</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#SOP">State of Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryCapacity">Battery Capacity</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#transformerResistance">Transformer Resistance</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
 </table>
 </div>
 <div class="property entity" id="QualitativeProperty">
@@ -617,7 +710,7 @@ td {
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/PropertyOntology/QualitativeProperty</code>
+<code>https://w3id.org/omega-x/ontology/Property/QualitativeProperty</code>
 </td>
 </tr>
 <tr>
@@ -632,7 +725,7 @@ td {
 </th>
 <td>
 <span>
-<a href="#Property">Property</a>
+<a href="#Property1">Property</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -648,6 +741,39 @@ td {
 </span>
 </td>
 </tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#EnergyFraud">Energy Fraud </a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#MainBreakerState">Main Breaker State </a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleType">Solar Module Type </a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleAssemblyThermalModel">Solar Module Type </a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
 </table>
 </div>
 <div class="property entity" id="Unit">
@@ -658,7 +784,7 @@ td {
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/PropertyOntology/Unit</code>
+<code>https://w3id.org/omega-x/ontology/Property/Unit</code>
 </td>
 </tr>
 <tr>
@@ -699,6 +825,17 @@ td {
 </ul>
 </td>
 </tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<span>
+<a href="#CubicMeter-HR">Cubic Meter per Hour</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
 </table>
 </div>
 <div class="property entity" id="Category">
@@ -709,7 +846,7 @@ td {
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/PropertyOntology/Category</code>
+<code>https://w3id.org/omega-x/ontology/Property/Category</code>
 </td>
 </tr>
 <tr>
@@ -723,7 +860,7 @@ td {
 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
 </th>
 <td>
-<a href="https://w3id.org/omega-x/EventTimeSeriesOntology/PropertyValue">ets:PropertyValue</a>
+<a href="https://w3id.org/omega-x/Eventsontology/TimeSeries/PropertyValue">ets:PropertyValue</a>
 </td>
 </tr>
 <tr>
@@ -734,6 +871,4608 @@ td {
 <span>
 <a href="#isEvaluatedIn">Is Evaluated In</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="Voltage">
+<h3>Voltage
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/Voltage</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#QuantitativeProperty">Quantitative property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#DCVoltage">DC Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#ACVoltage">AC Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#RMSVoltage">RMS Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryNominalVoltage">Battery Nominal voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryOperatingVoltage">Battery Operating Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryMaxChargeVoltage">Battery Maximum Charge Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#transformerVolatgeLevel">Transformer Voltage Level</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#busVolatge">Bus Volatge</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleVoC">Solar Module VOC</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleVmp">Solar Module VMP</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="Energy">
+<h3>Energy
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/Energy</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#QuantitativeProperty">Quantitative property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#EnergyCost">Energy Cost</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#Elosses">Electrical Losses</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#ThermalEnergy">Thermal Energy </a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#ActiveEnergy">Active Energy</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#ReactiveEnergy">Reactive Energy</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="Power">
+<h3>Power
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/Power</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#QuantitativeProperty">Quantitative property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#ActivePower">Active Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#ReactivePower">Reactive Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#ReactivePowerSetPoint">Reactive Power Set Point</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#DCPower">DC Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#SOP">State of Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#transformerPower">Transformer Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="Temperature">
+<h3>Temperature
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/Temperature</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#QuantitativeProperty">Quantitative property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#AirTemperature">Air Temperature</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#HeatSinkTemperature">Air Temperature</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<a href="#SystemInternalTemperature">System Internal Temperature</a>
+</li>
+<li>
+<a href="#PanelTemperature">Panel Temperature</a>
+</li>
+<li>
+<a href="#InternalInverterTemperature">Internal Inverter Temperature</a>
+</li>
+<li>
+<span>
+<a href="#batteryCellAverageTemperature">Battery Cell Average Temperature</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryMaxTemperature">Battery Cell Maximum Temperature</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleTemperatureCoefficient">Solar Module Temperature Coefficient</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="Current">
+<h3>Current
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/Current</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#QuantitativeProperty">Quantitative property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#DCCurrent">DC Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#ACCurrent">AC Current L1</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryOptimalDischargeCurrent">Battery Optimal Discharge Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryMaxDischargeCurrent">Battery Optimal Discharge Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryMaxPeakDischargeCurrent">Battery Maximum Peak Discharge Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryOptimalChargeCurrent">Battery Optimal Charge Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryMaChargeCurrent">Battery Maximum Charge Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleIsc">Solar Module ISC</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleImp">Solar Module ISC</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="DCCurrent">
+<h3>DC Current
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/DCCurrent</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The current in DC mode.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#Current">Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<span>
+<a href="#inveterMaxInputDCCurrent">Inverter Max Input DC Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="Resistance">
+<h3>Resistance
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/Resistance</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>For a resistive two-terminal element or two-terminal circuit with terminals A and B, quotient of the voltage (131-11-56) uAB between the terminals by the electric current i in the element or circuit.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#QuantitativeProperty">Quantitative property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<span>
+<a href="#InsulationResistance">Insulation Resistance</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ACCurrent">
+<h3>AC Current L1
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ACCurrent</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Alternating current on different phases.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#Current">Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="Irradiance">
+<h3>Irradiance
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/Irradiance</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>density of incident radiant flux with respect to area at a point on a real or imaginary surface.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#QuantitativeProperty">Quantitative property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="DCVoltage">
+<h3>DC Voltage
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/DCVoltage</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Direct Current Voltage</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#Voltage">Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<span>
+<a href="#inveterMaxInputDCVoltage">Inverter Max Input DC Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ACVoltage">
+<h3>AC Voltage
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ACVoltage</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Alternating Current Voltage for different phases.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#Voltage">Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="RMSVoltage">
+<h3>RMS Voltage
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/RMSVoltage</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The root mean square voltage.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Voltage">Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<a href="https://w3id.org/seas/Voltage">seas:Voltage</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="Frequency">
+<h3>Frequency
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/Frequency</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Reciprocal of the period.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#QuantitativeProperty">Quantitative property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="EnergyCost">
+<h3>Energy Cost
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/EnergyCost</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Energy prices agreed with the supplier for the energy term.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="https://w3id.org/seas/PricePerEnergy">seas:PricePerEnergy</a>
+</li>
+<li>
+<span>
+<a href="#Energy">Energy</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="AirTemperature">
+<h3>Air Temperature
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/AirTemperature</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#Temperature">Temperature</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="HeatSinkTemperature">
+<h3>Air Temperature
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/HeatSinkTemperature</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#Temperature">Temperature</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="Elosses">
+<h3>Electrical Losses
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/Elosses</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The estimated amount of energy lost in the distribution grid.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="#QuantitaiveProperty">prop:QuantitaiveProperty</a>
+</li>
+<li>
+<a href="https://w3id.org/seas/ElectricalEnergyProperty">seas:ElectricalEnergyProperty</a>
+</li>
+<li>
+<span>
+<a href="#Energy">Energy</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ThermalEnergy">
+<h3>Thermal Energy 
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ThermalEnergy</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Thermal energy is a kind of energy and it is generated when the temperature rises. It can be consumed or supplied.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="https://w3id.org/seas/ElectricalEnergyProperty">seas:ElectricalEnergyProperty</a>
+</li>
+<li>
+<span>
+<a href="#Energy">Energy</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="WaterLosses">
+<h3>Water Losses 
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/WaterQuantity</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Volume flow rate quantity equal to the volume dV of substance crossing a given surface during a time interval with infinitesimal duration dt, divided by this duration, thus qV = dV / dt.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<a href="#QuantitaiveProperty">prop:QuantitaiveProperty</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#WayerLosses">Water Losses </a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#WaterSupplied">Water Supplied</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#WaterConsumed">Water Consumed</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#WaterLosses1">Water Losses</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="WayerLosses">
+<h3>Water Losses 
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/WayerLosses</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The amount of water lost in the distribution grid. It can be consumed or supplied.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#WaterLosses">Water Losses </a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="WaterSupplied">
+<h3>Water Supplied
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/WaterSupplied</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The water quantity supplied.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#WaterLosses">Water Losses </a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="WaterConsumed">
+<h3>Water Consumed
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/WaterConsumed</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The water quantity consumed.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#WaterLosses">Water Losses </a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="WaterLosses1">
+<h3>Water Losses
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/WaterLosses</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The computed water quantity lost.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#WaterLosses">Water Losses </a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ActiveEnergy">
+<h3>Active Energy
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ActiveEnergy</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>the active energy is the integral of the instantaneous power p over a time interval [t1, t2].</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="https://w3id.org/seas/ElectricEnergyProperty">seas:ElectricEnergyProperty</a>
+</li>
+<li>
+<span>
+<a href="#Energy">Energy</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#ActiveEnergyProduced">Active Energy Produced</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#ActiveEnergyConsumed">Active Energy Consumed</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ActiveEnergyProduced">
+<h3>Active Energy Produced
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ActiveEnergyProduced</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>the active energy produced.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#ActiveEnergy">Active Energy</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#ActiveEnergyProducedOffPeakHR">Active Energy Produced Off Peak Hour</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#ActiveEnergyProducedPeakHR">Active Energy Produced Peak Hour</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ActiveEnergyConsumed">
+<h3>Active Energy Consumed
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ActiveEnergyConsumed</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>the active energy consumed.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#ActiveEnergy">Active Energy</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ActiveEnergyProducedOffPeakHR">
+<h3>Active Energy Produced Off Peak Hour
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ActiveEnergyProducedOffPeakHR</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>the active energy produced during off peak hour.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#ActiveEnergyProduced">Active Energy Produced</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ActiveEnergyProducedPeakHR">
+<h3>Active Energy Produced Peak Hour
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ActiveEnergyProducedPeakHR</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>the active energy produced during  peak hour.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#ActiveEnergyProduced">Active Energy Produced</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ReactiveEnergy">
+<h3>Reactive Energy
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ReactiveEnergy</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>In an AC system, the captive electrical energy exchanged continuously between the different electric and magnetic fields associated with the operation of the electrical system and of all the connected apparatus.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="https://w3id.org/seas/ElectricEnergyProperty">seas:ElectricEnergyProperty</a>
+</li>
+<li>
+<span>
+<a href="#Energy">Energy</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#ReactiveEnergyConsumed">Reactive Energy Consumed</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#ReactiveEnergyProduced">Reactive Energy Produced</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ReactiveEnergyConsumed">
+<h3>Reactive Energy Consumed
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ReactiveEnergyConsumed</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The reactive energy consumed.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#ReactiveEnergy">Reactive Energy</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#ReactiveEnergyConsumedOffPeakHR">Reactive Energy Consumed Off Peak Hours</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#ReactiveEnergyConsumedPeakHR">Reactive Energy Consumed Peak Hours</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ReactiveEnergyConsumedOffPeakHR">
+<h3>Reactive Energy Consumed Off Peak Hours
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ReactiveEnergyConsumedOffPeakHR</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The reactive energy consumed during off-peak hours.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#ReactiveEnergyConsumed">Reactive Energy Consumed</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ReactiveEnergyConsumedPeakHR">
+<h3>Reactive Energy Consumed Peak Hours
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ReactiveEnergyConsumedPeakHR</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The reactive energy consumed during peak hours.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#ReactiveEnergyConsumed">Reactive Energy Consumed</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ReactiveEnergyProduced">
+<h3>Reactive Energy Produced
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ReactiveEnergyProduced</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The reactive energy produced.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#ReactiveEnergy">Reactive Energy</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#ReactiveEnergyProducedOffPeakHR">Reactive Energy Produced Off Peak Hours</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#ReactiveEnergyProducedPeakHR">Reactive Energy Produced Peak Hours</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ReactiveEnergyProducedOffPeakHR">
+<h3>Reactive Energy Produced Off Peak Hours
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ReactiveEnergyProducedOffPeakHR</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The reactive energy produced during off-peak hours.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#ReactiveEnergyProduced">Reactive Energy Produced</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ReactiveEnergyProducedPeakHR">
+<h3>Reactive Energy Produced Peak Hours
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ReactiveEnergyProducedPeakHR</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The reactive energy produced during peak hours.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#ReactiveEnergyProduced">Reactive Energy Produced</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ActivePower">
+<h3>Active Power
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ActivePower</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Under periodic conditions, mean value, taken over one period T, of the instantaneous power p.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="https://w3id.org/seas/ElectricPoweryProperty">seas:ElectricPoweryProperty</a>
+</li>
+<li>
+<span>
+<a href="#Power">Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#ActivePowerAC">Active Power AC</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#ActivePowerDC">Active Power DC</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#ActivePowerProduced">Active Power Produced</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ActivePowerAC">
+<h3>Active Power AC
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ActivePowerAC</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Active Power in AC Mode.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#ActivePower">Active Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ActivePowerDC">
+<h3>Active Power DC
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ActivePowerDC</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Active Power in DC Mode.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#ActivePower">Active Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ActivePowerProduced">
+<h3>Active Power Produced
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ActivePowerProduced</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Active Power Produced.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#ActivePower">Active Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ReactivePower">
+<h3>Reactive Power
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ReactivePower</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Quantity equal to the mean value of the product of the instantaneous voltage u and the instantaneous current i which is equal to i but leading it by π/2.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="https://w3id.org/seas/ElectricPoweryProperty">seas:ElectricPoweryProperty</a>
+</li>
+<li>
+<span>
+<a href="#Power">Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#ReactivePowerProduced">Reactive Power Produced</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#ReactivePowerConsumed">Reactive Power Consumed</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ReactivePowerProduced">
+<h3>Reactive Power Produced
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ReactivePowerProduced</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The reactive power produced.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#ReactivePower">Reactive Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ReactivePowerConsumed">
+<h3>Reactive Power Consumed
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ReactivePowerConsumed</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The reactive power consumed.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#ReactivePower">Reactive Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ReactivePowerSetPoint">
+<h3>Reactive Power Set Point
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ReactivePowerSetPoint</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Predetermined or desired value of reactive power that a device or electrical system should produce or consume at a given time.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="https://w3id.org/seas/ElectricPowerProperty">seas:ElectricPowerProperty</a>
+</li>
+<li>
+<span>
+<a href="#Power">Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="DCPower">
+<h3>DC Power
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/DCPower</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Power in DC mode.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="https://w3id.org/seas/ElectricPowerProperty">seas:ElectricPowerProperty</a>
+</li>
+<li>
+<span>
+<a href="#Power">Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<span>
+<a href="#inveterMaxInputDCPower">Inverter Max Input DC Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="EnergyPrice">
+<h3>Energy Price
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/EnergyPrice</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Energy prices agreed with the DSO for the power term .</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="https://w3id.org/seas/PricePerEnergy">seas:PricePerEnergy</a>
+</li>
+<li>
+<a href="#QuantitaiveProperty">prop:QuantitaiveProperty</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="SOP">
+<h3>State of Power
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/SOP</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>A battery state-of-power (SOP) is defined as the ratio of peak power to nominal power .</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Power">Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#QuantitativeProperty">Quantitative property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#StateofPowerCharge">State of Power in Charge</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#StateofPowerDischarge">State of Power in Discharge</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="StateofPowerCharge">
+<h3>State of Power in Charge
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/StateofPowerCharge</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The maximum possible charge power that a battery system can support over a fixed time interval.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="https://w3id.org/seas/PowerEnergy">seas:PowerEnergy</a>
+</li>
+<li>
+<span>
+<a href="#SOP">State of Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="StateofPowerDischarge">
+<h3>State of Power in Discharge
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/StateofPowerDischarge</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The maximum possible discharge power that a battery system can support over a fixed time interval.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="https://w3id.org/seas/PowerEnergy">seas:PowerEnergy</a>
+</li>
+<li>
+<span>
+<a href="#SOP">State of Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="StateofCharge">
+<h3>State of Charge
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/SoC</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The state of charge (SoC) can be described as the level of charge of a battery relative to its capacity..</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<a href="#QuantitaiveProperty">prop:QuantitaiveProperty</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#batteryMinSoC">Battery Minimum State of Charge</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryMaxSoC">Battery Maximum State of Charge</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="InsulationResistance">
+<h3>Insulation Resistance
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/InsulationResistance</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Resistance under specified conditions between two conductive elements separated by insulating materials .</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#Resistance">Resistance</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ProductionDurationOffPeakHour">
+<h3>Production Duration Off Peak Hour
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ProductionDurationOffPeakHR</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The duration of the electricity production during off peak hours.</p></td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ProductionDurationPeakHour">
+<h3>Production Duration Peak Hour
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ProductionDurationPeakHR</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The duration of the electricity production during peak hours.</p></td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="ProductionDuration">
+<h3>Production Duration
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/ProductionDuration</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The duration of the electricity production during peak and peak-off hours.</p></td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryProperty">
+<h3>battery property
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryProperty</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Data sheet/static property related to a battery.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<a href="#QuantitaiveProperty">prop:QuantitaiveProperty</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#batteryOperatingVoltage">Battery Operating Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryDeepDischargeVoltage">Battery Deep Discharge Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryCapacity">Battery Capacity</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryCellAverageTemperature">Battery Cell Average Temperature</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryMaxTemperature">Battery Cell Maximum Temperature</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryMaxChargeVoltage">Battery Maximum Charge Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryOptimalDischargeCurrent">Battery Optimal Discharge Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryMaxDischargeCurrent">Battery Optimal Discharge Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryMaxPeakDischargeCurrent">Battery Maximum Peak Discharge Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryOptimalChargeCurrent">Battery Optimal Charge Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryMaChargeCurrent">Battery Maximum Charge Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryDimensions">Battery Dimensions</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryWeight">Battery Weight</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryNominalVoltage">
+<h3>Battery Nominal voltage
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryNominalVoltage</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The operating voltage under load is 3V.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Voltage">Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<a href="#batteryroperty">prop:batteryroperty</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryOperatingVoltage">
+<h3>Battery Operating Voltage
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryOperatingVoltage</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The operating volatge at 80% Depth Of Discharge (DOD).</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Voltage">Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryProperty">prop:batteryProperty</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#batteryMaxOperatingVoltage">Battery Maximum Operating Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryMinOperatingVoltage">Battery Minimum Operating Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryMaxOperatingVoltage">
+<h3>Battery Maximum Operating Voltage
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryMaxOperatingVoltage</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Battery maximum operating volatge at 80% Depth Of Discharge (DOD).</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#batteryOperatingVoltage">Battery Operating Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryMinOperatingVoltage">
+<h3>Battery Minimum Operating Voltage
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryMinOperatingVoltage</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Battery minimum operating volatge at 80% Depth Of Discharge (DOD).</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#batteryOperatingVoltage">Battery Operating Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryMinSoC">
+<h3>Battery Minimum State of Charge
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryMinSoC</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Battery minimum state of charge.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#StateofCharge">State of Charge</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryMaxSoC">
+<h3>Battery Maximum State of Charge
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryMaxSoC</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Battery maximum state of charge.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#StateofCharge">State of Charge</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryDeepDischargeVoltage">
+<h3>Battery Deep Discharge Voltage
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryDeepDischargeVoltage</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The cell is damaged if voltage drops below this voltage.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="#Volatge">prop:Volatge</a>
+</li>
+<li>
+<span>
+<a href="#batteryProperty">prop:batteryProperty</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryCapacity">
+<h3>Battery Capacity
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryCapacity</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The capacity of the battery in ampere hour.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#batteryProperty">prop:batteryProperty</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#QuantitativeProperty">Quantitative property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryCellAverageTemperature">
+<h3>Battery Cell Average Temperature
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryCellAverageTemperature</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The battery temperature should not decrease this level during charge and discharge.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Temperature">Temperature</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryProperty">prop:batteryProperty</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryMaxTemperature">
+<h3>Battery Cell Maximum Temperature
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryMaxTemperature</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The battery temperature should not increase this level during charge and discharge.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Temperature">Temperature</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryProperty">prop:batteryProperty</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryMaxChargeVoltage">
+<h3>Battery Maximum Charge Voltage
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryMaxChargeVoltage</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The battery cell is damaged if voltage exceeds this level in charge.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Voltage">Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryProperty">prop:batteryProperty</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryOptimalDischargeCurrent">
+<h3>Battery Optimal Discharge Current
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryOptimalDischargeCurrent</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The maximal  current at 0.5°C.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Current">Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryProperty">prop:batteryProperty</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryMaxDischargeCurrent">
+<h3>Battery Optimal Discharge Current
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryMaxDischargeCurrent</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The maximal current at 3°C, continious for max 15 minutes from full charge.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Current">Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryProperty">prop:batteryProperty</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryMaxPeakDischargeCurrent">
+<h3>Battery Maximum Peak Discharge Current
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryMaxPeakDischargeCurrent</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The maximal current at 10°C, maximal 5 seconds in 1 minute.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Current">Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryProperty">prop:batteryProperty</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryOptimalChargeCurrent">
+<h3>Battery Optimal Charge Current
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryOptimalChargeCurrent</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The maximal current at 0.5 C.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Current">Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryProperty">prop:batteryProperty</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryMaChargeCurrent">
+<h3>Battery Maximum Charge Current
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryMaChargeCurrent</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The maximal current at &lt;0.3 C with battery temperature monitoring.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Current">Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#batteryProperty">prop:batteryProperty</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryDimensions">
+<h3>Battery Dimensions
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryDimensions</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The dimension of the battery Lxlxh.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="#QuantitaiveProperty">prop:QuantitaiveProperty</a>
+</li>
+<li>
+<span>
+<a href="#batteryProperty">prop:batteryProperty</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="batteryWeight">
+<h3>Battery Weight
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/batteryWeight</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The weight of the battery in Kg.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="#QuantitaiveProperty">prop:QuantitaiveProperty</a>
+</li>
+<li>
+<span>
+<a href="#batteryProperty">prop:batteryProperty</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="transformerPower">
+<h3>Transformer Power
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/transformerPower</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td>
+<ul>
+<li><p>The Transformer Properties.</p></li>
+<li><p>The Transformer Power.</p></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Property1">Property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#Power">Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<a href="#transformerProperty">prop:transformerProperty</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="transformerResistance">
+<h3>Transformer Resistance
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/transformerResistance</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The Transformer Resistance.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="#transformerProperty">prop:transformerProperty</a>
+</li>
+<li>
+<span>
+<a href="#QuantitativeProperty">Quantitative property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="TransformerCapacity">
+<h3>Transformer Capacity
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/transfomerCapacity</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>the transformer capacity.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="#Capacity">prop:Capacity</a>
+</li>
+<li>
+<a href="#transformerProperty">prop:transformerProperty</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="transformerVolatgeLevel">
+<h3>Transformer Voltage Level
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/transformerVolatgeLevel</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The transformer voltage level.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Voltage">Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<a href="#transformerProperty">prop:transformerProperty</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="busVolatge">
+<h3>Bus Volatge
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/busVolatge</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The bus voltage .</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Voltage">Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<a href="#QuantitaiveProperty">prop:QuantitaiveProperty</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="inverterProperty">
+<h3>Inverter Property
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/inverterProperty</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>This property includes all static properties of an inverter.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#Property1">Property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#inveterMaxInputDCVoltage">Inverter Max Input DC Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#inveterMaxInputDCCurrent">Inverter Max Input DC Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#inveterMaxInputDCPower">Inverter Max Input DC Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="inveterMaxInputDCVoltage">
+<h3>Inverter Max Input DC Voltage
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/inveterMaxInputDCVoltage</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The maximum input dc voltage of an inverter.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#DCVoltage">DC Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#inverterProperty">Inverter Property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="inveterMaxInputDCCurrent">
+<h3>Inverter Max Input DC Current
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/inveterMaxInputDCCurrent</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The maximum dc input current of an inverter.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#DCCurrent">DC Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#inverterProperty">Inverter Property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="inveterMaxInputDCPower">
+<h3>Inverter Max Input DC Power
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/inveterMaxInputDCPower</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The maximum input DC  power of an inverter.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#DCPower">DC Power</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#inverterProperty">Inverter Property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="InveterDCMaxPowerPointVoltageRange">
+<h3>Inveter DC Max Power Point Voltage Range
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/inveterDCMaxPowerPointVoltageRange</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The maximum voltage range of DC power point of an inverter.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="https://w3id.org/seas/VoltageProperty">seas:VoltageProperty</a>
+</li>
+<li>
+<a href="#QuantitaiveProperty">prop:QuantitaiveProperty</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="solarModuleProperty">
+<h3>Solar Module Property
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/solarModuleProperty</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>This property includes all static properties of a solar module.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#Property1">Property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#solarModuleVoC">Solar Module VOC</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleVmp">Solar Module VMP</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleImp">Solar Module ISC</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleTemperatureCoefficient">Solar Module Temperature Coefficient</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleType">Solar Module Type </a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleAssemblyThermalModel">Solar Module Type </a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="solarModuleVoC">
+<h3>Solar Module VOC
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/solarModuleVoC</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Solar module open circuit voltage given at STC operating standard conditions.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Voltage">Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleProperty">Solar Module Property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="solarModuleIsc">
+<h3>Solar Module ISC
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/solarModuleIsc</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Solar module short circuit current given at STC operating standard conditions.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Current">Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<a href="#solarModule">prop:solarModule</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="solarModuleVmp">
+<h3>Solar Module VMP
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/solarModuleVmp</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Solar module maximum power point voltage at operating standard conditions.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Voltage">Voltage</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleProperty">Solar Module Property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="solarModuleImp">
+<h3>Solar Module ISC
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/solarModuleImp</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Solar module maximum power point current at operating standard conditions.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Current">Current</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleProperty">Solar Module Property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="solarModuleTemperatureCoefficient">
+<h3>Solar Module Temperature Coefficient
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/solarModuleTemperatureCoefficient</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Solar module temperature coefficient used to consider performance degradation due to high temperature.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#Temperature">Temperature</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleProperty">Solar Module Property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="SmartMeterEventlogs">
+<h3>Smart Meter Event logs 
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/SMEventLogs</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The event logs generated by a smart meter.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<a href="#QuanlitativeProperty">prop:QuanlitativeProperty</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="EnergyFraud">
+<h3>Energy Fraud 
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/EnergyFraud</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Which type of installation is stealing energy:  Bitcoin mining, Marihuana plantations, or Squatting.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#QualitativeProperty">Qualitative Property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="MainBreakerState">
+<h3>Main Breaker State 
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/MainBreakerState</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The main breaker state.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#QualitativeProperty">Qualitative Property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="solarModuleType">
+<h3>Solar Module Type 
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/solarModuleType</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td>
+<ul>
+<li><p>The type of the solar module.</p></li>
+<li><p>The type of a solar module.</p></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#QualitativeProperty">Qualitative Property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleProperty">Solar Module Property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="solarModuleAssemblyThermalModel">
+<h3>Solar Module Type Solar Module Assembly Thermal Model 
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/solarModuleAssemblyThermalModel</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td>
+<ul>
+<li><p>The type of the solar module.</p></li>
+<li><p>The assembly thermal model of a solar module.</p></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<ul>
+<li>
+<span>
+<a href="#QualitativeProperty">Qualitative Property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#solarModuleProperty">Solar Module Property</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="CubicMeter-HR">
+<h3>Cubic Meter per Hour
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://w3id.org/omega-x/ontology/Property/CubicMeter-HR</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://w3id.org/omega-x/ontology/Property/">Property ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+</th>
+<td>
+<span>
+<a href="#Unit">Unit</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
 </tr>
@@ -750,7 +5489,7 @@ td {
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/PropertyOntology/isMeasuredIn</code>
+<code>https://w3id.org/omega-x/ontology/Property/isMeasuredIn</code>
 </td>
 </tr>
 <tr>
@@ -791,7 +5530,7 @@ td {
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/PropertyOntology/isEvaluatedIn</code>
+<code>https://w3id.org/omega-x/ontology/Property/isEvaluatedIn</code>
 </td>
 </tr>
 <tr>
@@ -832,7 +5571,7 @@ td {
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/PropertyOntology/hasPropertyValue</code>
+<code>https://w3id.org/omega-x/ontology/Property/hasPropertyValue</code>
 </td>
 </tr>
 <tr>
@@ -847,7 +5586,7 @@ td {
 </th>
 <td>
 <span>
-<a href="#Property">Property</a>
+<a href="#Property1">Property</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -857,7 +5596,7 @@ td {
 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
 </th>
 <td>
-<a href="https://w3id.org/omega-x/EventTimeSeriesOntology/PropertyValue">ets:PropertyValue</a>
+<a href="https://w3id.org/omega-x/Eventsontology/TimeSeries/PropertyValue">ets:PropertyValue</a>
 </td>
 </tr>
 </table>
@@ -870,7 +5609,7 @@ td {
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/PropertyOntology/isAboutProperty</code>
+<code>https://w3id.org/omega-x/ontology/Property/isAboutProperty</code>
 </td>
 </tr>
 <tr>
@@ -885,7 +5624,7 @@ td {
 </th>
 <td>
 <span>
-<a href="#Property">Property</a>
+<a href="#Property1">Property</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -900,7 +5639,7 @@ td {
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/PropertyOntology/isUsedIn</code>
+<code>https://w3id.org/omega-x/ontology/Property/isUsedIn</code>
 </td>
 </tr>
 <tr>
@@ -925,7 +5664,7 @@ td {
 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
 </th>
 <td>
-<a href="https://w3id.org/omega-x/EventTimeSeriesOntology/PropertyValue">ets:PropertyValue</a>
+<a href="https://w3id.org/omega-x/Eventsontology/TimeSeries/PropertyValue">ets:PropertyValue</a>
 </td>
 </tr>
 </table>
@@ -938,7 +5677,7 @@ td {
 <tr>
 <th>IRI</th>
 <td>
-<code>https://w3id.org/omega-x/PropertyOntology/hasUnit</code>
+<code>https://w3id.org/omega-x/ontology/Property/hasUnit</code>
 </td>
 </tr>
 <tr>
@@ -1155,7 +5894,7 @@ td {
 </dd>
 <dt id="ets">ets</dt>
 <dd>
-<code>https://w3id.org/omega-x/EventTimeSeriesOntology/</code>
+<code>https://w3id.org/omega-x/Eventsontology/TimeSeries/</code>
 </dd>
 <dt id="foaf">foaf</dt>
 <dd>
@@ -1167,7 +5906,7 @@ td {
 </dd>
 <dt id="prop">prop</dt>
 <dd>
-<code>https://w3id.org/omega-x/PropertyOntology/</code>
+<code>https://w3id.org/omega-x/ontology/Property/</code>
 </dd>
 <dt id="prov">prov</dt>
 <dd>
@@ -1189,9 +5928,17 @@ td {
 <dd>
 <code>http://schema.org/</code>
 </dd>
+<dt id="seas">seas</dt>
+<dd>
+<code>https://w3id.org/seas/</code>
+</dd>
 <dt id="time">time</dt>
 <dd>
 <code>http://www.w3.org/2006/time#</code>
+</dd>
+<dt id="unit">unit</dt>
+<dd>
+<code>http://qudt.org/schema/qudt/Unit/</code>
 </dd>
 <dt id="vann">vann</dt>
 <dd>
@@ -1245,7 +5992,7 @@ td {
 <a href="#TemporalEntity">Temporal Entity</a>
 </li>
 <li>
-<a href="#Property">Property</a>
+<a href="#Property1">Property</a>
 </li>
 <li>
 <a href="#QuantitativeProperty">Quantitative property</a>
@@ -1258,6 +6005,288 @@ td {
 </li>
 <li>
 <a href="#Category">Category</a>
+</li>
+<li>
+<a href="#Voltage">Voltage</a>
+</li>
+<li>
+<a href="#Energy">Energy</a>
+</li>
+<li>
+<a href="#Power">Power</a>
+</li>
+<li>
+<a href="#Temperature">Temperature</a>
+</li>
+<li>
+<a href="#Current">Current</a>
+</li>
+<li>
+<a href="#DCCurrent">DC Current</a>
+</li>
+<li>
+<a href="#Resistance">Resistance</a>
+</li>
+<li>
+<a href="#ACCurrent">AC Current L1</a>
+</li>
+<li>
+<a href="#Irradiance">Irradiance</a>
+</li>
+<li>
+<a href="#DCVoltage">DC Voltage</a>
+</li>
+<li>
+<a href="#ACVoltage">AC Voltage</a>
+</li>
+<li>
+<a href="#RMSVoltage">RMS Voltage</a>
+</li>
+<li>
+<a href="#Frequency">Frequency</a>
+</li>
+<li>
+<a href="#EnergyCost">Energy Cost</a>
+</li>
+<li>
+<a href="#AirTemperature">Air Temperature</a>
+</li>
+<li>
+<a href="#HeatSinkTemperature">Air Temperature</a>
+</li>
+<li>
+<a href="#Elosses">Electrical Losses</a>
+</li>
+<li>
+<a href="#ThermalEnergy">Thermal Energy </a>
+</li>
+<li>
+<a href="#WaterLosses">Water Losses </a>
+</li>
+<li>
+<a href="#WayerLosses">Water Losses </a>
+</li>
+<li>
+<a href="#WaterSupplied">Water Supplied</a>
+</li>
+<li>
+<a href="#WaterConsumed">Water Consumed</a>
+</li>
+<li>
+<a href="#WaterLosses1">Water Losses</a>
+</li>
+<li>
+<a href="#ActiveEnergy">Active Energy</a>
+</li>
+<li>
+<a href="#ActiveEnergyProduced">Active Energy Produced</a>
+</li>
+<li>
+<a href="#ActiveEnergyConsumed">Active Energy Consumed</a>
+</li>
+<li>
+<a href="#ActiveEnergyProducedOffPeakHR">Active Energy Produced Off Peak Hour</a>
+</li>
+<li>
+<a href="#ActiveEnergyProducedPeakHR">Active Energy Produced Peak Hour</a>
+</li>
+<li>
+<a href="#ReactiveEnergy">Reactive Energy</a>
+</li>
+<li>
+<a href="#ReactiveEnergyConsumed">Reactive Energy Consumed</a>
+</li>
+<li>
+<a href="#ReactiveEnergyConsumedOffPeakHR">Reactive Energy Consumed Off Peak Hours</a>
+</li>
+<li>
+<a href="#ReactiveEnergyConsumedPeakHR">Reactive Energy Consumed Peak Hours</a>
+</li>
+<li>
+<a href="#ReactiveEnergyProduced">Reactive Energy Produced</a>
+</li>
+<li>
+<a href="#ReactiveEnergyProducedOffPeakHR">Reactive Energy Produced Off Peak Hours</a>
+</li>
+<li>
+<a href="#ReactiveEnergyProducedPeakHR">Reactive Energy Produced Peak Hours</a>
+</li>
+<li>
+<a href="#ActivePower">Active Power</a>
+</li>
+<li>
+<a href="#ActivePowerAC">Active Power AC</a>
+</li>
+<li>
+<a href="#ActivePowerDC">Active Power DC</a>
+</li>
+<li>
+<a href="#ActivePowerProduced">Active Power Produced</a>
+</li>
+<li>
+<a href="#ReactivePower">Reactive Power</a>
+</li>
+<li>
+<a href="#ReactivePowerProduced">Reactive Power Produced</a>
+</li>
+<li>
+<a href="#ReactivePowerConsumed">Reactive Power Consumed</a>
+</li>
+<li>
+<a href="#ReactivePowerSetPoint">Reactive Power Set Point</a>
+</li>
+<li>
+<a href="#DCPower">DC Power</a>
+</li>
+<li>
+<a href="#EnergyPrice">Energy Price</a>
+</li>
+<li>
+<a href="#SOP">State of Power</a>
+</li>
+<li>
+<a href="#StateofPowerCharge">State of Power in Charge</a>
+</li>
+<li>
+<a href="#StateofPowerDischarge">State of Power in Discharge</a>
+</li>
+<li>
+<a href="#StateofCharge">State of Charge</a>
+</li>
+<li>
+<a href="#InsulationResistance">Insulation Resistance</a>
+</li>
+<li>
+<a href="#ProductionDurationOffPeakHour">Production Duration Off Peak Hour</a>
+</li>
+<li>
+<a href="#ProductionDurationPeakHour">Production Duration Peak Hour</a>
+</li>
+<li>
+<a href="#ProductionDuration">Production Duration</a>
+</li>
+<li>
+<a href="#batteryProperty">battery property</a>
+</li>
+<li>
+<a href="#batteryNominalVoltage">Battery Nominal voltage</a>
+</li>
+<li>
+<a href="#batteryOperatingVoltage">Battery Operating Voltage</a>
+</li>
+<li>
+<a href="#batteryMaxOperatingVoltage">Battery Maximum Operating Voltage</a>
+</li>
+<li>
+<a href="#batteryMinOperatingVoltage">Battery Minimum Operating Voltage</a>
+</li>
+<li>
+<a href="#batteryMinSoC">Battery Minimum State of Charge</a>
+</li>
+<li>
+<a href="#batteryMaxSoC">Battery Maximum State of Charge</a>
+</li>
+<li>
+<a href="#batteryDeepDischargeVoltage">Battery Deep Discharge Voltage</a>
+</li>
+<li>
+<a href="#batteryCapacity">Battery Capacity</a>
+</li>
+<li>
+<a href="#batteryCellAverageTemperature">Battery Cell Average Temperature</a>
+</li>
+<li>
+<a href="#batteryMaxTemperature">Battery Cell Maximum Temperature</a>
+</li>
+<li>
+<a href="#batteryMaxChargeVoltage">Battery Maximum Charge Voltage</a>
+</li>
+<li>
+<a href="#batteryOptimalDischargeCurrent">Battery Optimal Discharge Current</a>
+</li>
+<li>
+<a href="#batteryMaxDischargeCurrent">Battery Optimal Discharge Current</a>
+</li>
+<li>
+<a href="#batteryMaxPeakDischargeCurrent">Battery Maximum Peak Discharge Current</a>
+</li>
+<li>
+<a href="#batteryOptimalChargeCurrent">Battery Optimal Charge Current</a>
+</li>
+<li>
+<a href="#batteryMaChargeCurrent">Battery Maximum Charge Current</a>
+</li>
+<li>
+<a href="#batteryDimensions">Battery Dimensions</a>
+</li>
+<li>
+<a href="#batteryWeight">Battery Weight</a>
+</li>
+<li>
+<a href="#transformerPower">Transformer Power</a>
+</li>
+<li>
+<a href="#transformerResistance">Transformer Resistance</a>
+</li>
+<li>
+<a href="#TransformerCapacity">Transformer Capacity</a>
+</li>
+<li>
+<a href="#transformerVolatgeLevel">Transformer Voltage Level</a>
+</li>
+<li>
+<a href="#busVolatge">Bus Volatge</a>
+</li>
+<li>
+<a href="#inverterProperty">Inverter Property</a>
+</li>
+<li>
+<a href="#inveterMaxInputDCVoltage">Inverter Max Input DC Voltage</a>
+</li>
+<li>
+<a href="#inveterMaxInputDCCurrent">Inverter Max Input DC Current</a>
+</li>
+<li>
+<a href="#inveterMaxInputDCPower">Inverter Max Input DC Power</a>
+</li>
+<li>
+<a href="#InveterDCMaxPowerPointVoltageRange">Inveter DC Max Power Point Voltage Range</a>
+</li>
+<li>
+<a href="#solarModuleProperty">Solar Module Property</a>
+</li>
+<li>
+<a href="#solarModuleVoC">Solar Module VOC</a>
+</li>
+<li>
+<a href="#solarModuleIsc">Solar Module ISC</a>
+</li>
+<li>
+<a href="#solarModuleVmp">Solar Module VMP</a>
+</li>
+<li>
+<a href="#solarModuleImp">Solar Module ISC</a>
+</li>
+<li>
+<a href="#solarModuleTemperatureCoefficient">Solar Module Temperature Coefficient</a>
+</li>
+<li>
+<a href="#SmartMeterEventlogs">Smart Meter Event logs </a>
+</li>
+<li>
+<a href="#EnergyFraud">Energy Fraud </a>
+</li>
+<li>
+<a href="#MainBreakerState">Main Breaker State </a>
+</li>
+<li>
+<a href="#solarModuleType">Solar Module Type </a>
+</li>
+<li>
+<a href="#solarModuleAssemblyThermalModel">Solar Module Type Solar Module Assembly Thermal Model </a>
+</li>
+<li>
+<a href="#CubicMeter-HR">Cubic Meter per Hour</a>
 </li>
 </ul>
 </li>
@@ -1371,7 +6400,13 @@ td {
 <a href="#schema1">schema1</a>
 </li>
 <li>
+<a href="#seas">seas</a>
+</li>
+<li>
 <a href="#time">time</a>
+</li>
+<li>
+<a href="#unit">unit</a>
 </li>
 <li>
 <a href="#vann">vann</a>
