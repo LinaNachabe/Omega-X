@@ -2,7 +2,7 @@
 
 ## Description
 ### Purpose
-In energy domain, a simplified infrastructure topology of the system should be described in order to deliver intelligent services. The infrastructure topology facilitates the description of an infrastructure in a flexible way by allowing to describe the infrastructure’s components and its relations. 
+In energy domain, a simplified infrastructure topology of the system should be described in order to deliver intelligent services. The infrastructure topology facilitates the description of an infrastructure in a flexible way by allowing to describe the infrastructure’s components and its relations. A taxonomy of infrastructure systems is defined for the energy domain.
 ### Scope
 Infrastructure ontology provides OWL classes and properties to allow infrastructure of an energy system to be described.
 ### Description
@@ -48,4 +48,8 @@ A system configuration is a set of properties characterizing its structure and b
 ### SEAS
 * [**_seas:System_**]( https://w3id.org/seas/System): The class of systems, i.e., systems virtually isolated from the environment, whose behaviour and interactions with the environment are modeled.
 
-* [**_seas:connectedTo_**]( https://w3id.org/seas/connectedTo): Links a system to a system it is connected to. Connected systems interact in some way. The exact meaning of interact is defined by sub properties of [**_seas:connectedTo_**]. 
+* [**_seas:connectedTo_**]( https://w3id.org/seas/connectedTo): Links a system to a system it is connected to. Connected systems interact in some way. The exact meaning of interact is defined by sub properties of [**_seas:connectedTo_**].
+### SAREF4SYS
+* [**_seas:System_**](https://saref.etsi.org/saref4syst/System): The class of systems, i.e., systems virtually isolated from the environment, whose behaviour and interactions with the environment are modeled. Systems can be connected to other systems via [SAREF4SYST connectedTo](https://saref.etsi.org/saref4syst/connectedTo). Connected systems interact in some ways. Systems can also have subsystems [SAREF4SYST hasSubSystem] (https://saref.etsi.org/saref4syst/hasSubSystem), inverse property of [s4syst:subSystemOf](https://saref.etsi.org/saref4syst/subSystem).
+.
+
