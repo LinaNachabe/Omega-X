@@ -58,10 +58,10 @@ A system configuration is a set of properties of interest characterizing its str
 ### SEAS
 * [**_seas:System_**]( https://w3id.org/seas/System): The class of systems, i.e., systems virtually isolated from the environment, whose behaviour and interactions with the environment are modeled.
 
-* [**_seas:connectedTo_**]( https://w3id.org/seas/connectedTo): Links a system to a system it is connected to. Connected systems interact in some way. The exact meaning of interact is defined by sub properties of [**_seas:connectedTo_**]. 
+* [**_seas:connectedTo_**](https://w3id.org/seas/connectedTo): Links a system to a system it is connected to. Connected systems interact in some way. The exact meaning of interact is defined by sub properties of (https://w3id.org/seas/connectedTo). 
 
 ### SAREF4SYST
-* [**_s4syst:System_**]( https://saref.etsi.org/saref4syst/System): he class of systems, i.e., systems virtually isolated from the environment, whose behaviour and interactions with the environment are modeled. Systems can be connected to other systems. Connected systems interact in some ways. Systems can also have subsystems. Properties of subsystems somehow contribute to the properties of the supersystem.
+* [**_s4syst:System_**](https://saref.etsi.org/saref4syst/System): he class of systems, i.e., systems virtually isolated from the environment, whose behaviour and interactions with the environment are modeled. Systems can be connected to other systems. Connected systems interact in some ways. Systems can also have subsystems. Properties of subsystems somehow contribute to the properties of the supersystem.
 
-* [**_s4syst:connectedTo_**]( https://saref.etsi.org/saref4syst/connectedTo): Links a system to a system it is connected to. Connected systems interact in some way. The exact meaning of "interact" is defined by sub properties of [**_s4syst:connectedTo_**]. It is symmetric. This property can be qualified using class [**_seas:connection_**], which connects the two systems. If there is a connection between several systems, then one may infer these systems are pairwise connected.
+* [**_s4syst:connectedTo_**]( https://saref.etsi.org/saref4syst/connectedTo): Links a system to a system it is connected to. Connected systems interact in some way. The exact meaning of "interact" is defined by sub properties of ( https://saref.etsi.org/saref4syst/connectedTo). It is symmetric. This property can be qualified using class ( https://saref.etsi.org/saref4syst/connectection) which connects the two systems. If there is a connection between several systems, then one may infer these systems are pairwise connected.
 
