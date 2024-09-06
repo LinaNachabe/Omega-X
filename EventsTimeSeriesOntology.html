@@ -290,13 +290,13 @@ td {
     ],
     "https://schema.org/contributor": [
       {
-        "@id": "_:nc241f28fb51d4962a185cbadc0471805b1"
+        "@id": "_:na5df6bf182894728bb7a0a82b9b75934b1"
       },
       {
-        "@id": "_:nc241f28fb51d4962a185cbadc0471805b2"
+        "@id": "_:na5df6bf182894728bb7a0a82b9b75934b2"
       },
       {
-        "@id": "_:nc241f28fb51d4962a185cbadc0471805b3"
+        "@id": "_:na5df6bf182894728bb7a0a82b9b75934b3"
       }
     ],
     "https://schema.org/copyrightNotice": [
@@ -351,7 +351,7 @@ td {
     ]
   },
   {
-    "@id": "_:nc241f28fb51d4962a185cbadc0471805b1",
+    "@id": "_:na5df6bf182894728bb7a0a82b9b75934b1",
     "https://schema.org/name": [
       {
         "@value": "Fatma-Zohra Hannou"
@@ -359,7 +359,7 @@ td {
     ]
   },
   {
-    "@id": "_:nc241f28fb51d4962a185cbadc0471805b2",
+    "@id": "_:na5df6bf182894728bb7a0a82b9b75934b2",
     "https://schema.org/name": [
       {
         "@value": "Lina Nachabe"
@@ -367,7 +367,7 @@ td {
     ]
   },
   {
-    "@id": "_:nc241f28fb51d4962a185cbadc0471805b3",
+    "@id": "_:na5df6bf182894728bb7a0a82b9b75934b3",
     "https://schema.org/name": [
       {
         "@value": "Maxime Lefrançois"
@@ -613,7 +613,16 @@ td {
 <span>
 <a href="#hasTemporalContext">Has Temporal Context</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
-</span>some<br/>
+</span>
+<span>
+<span class="cardinality">some</span>
+<span>
+<span>
+<a href="http://www.w3.org/2006/time#TemporalEntity">time:TemporalEntity</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</span>
+</span><br/>
 </span>
 </span>
 </td>
@@ -726,7 +735,16 @@ td {
 <span>
 <a href="#cause">Cause</a>
 <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-</span>some<br/>
+</span>
+<span>
+<span class="cardinality">some</span>
+<span>
+<span>
+<a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</span>
+</span><br/>
 </span>
 </span>
 </li>
@@ -736,7 +754,16 @@ td {
 <span>
 <a href="#state">State</a>
 <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-</span>some<br/>
+</span>
+<span>
+<span class="cardinality">some</span>
+<span>
+<span>
+<a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</span>
+</span><br/>
 </span>
 </span>
 </li>
@@ -919,7 +946,16 @@ td {
 <span>
 <a href="#hasStep">Has Step</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
-</span>some<br/>
+</span>
+<span>
+<span class="cardinality">some</span>
+<span>
+<span>
+<a href="http://www.w3.org/2006/time#Duration">time:Duration</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</span>
+</span><br/>
 </span>
 </span>
 </td>
@@ -1146,6 +1182,15 @@ td {
 <span>
 <span class="cardinality">max</span>
 <span>1</span>
+</span>
+<span>
+<span class="cardinality">some</span>
+<span>
+<span>
+<a href="https://w3id.org/omega-x/ontology/Property/Unit">prop:Unit</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</span>
 </span>
 <div class="section" id="objectproperties">
 <h2>Object Properties</h2>
@@ -2350,10 +2395,6 @@ td {
 <dd>
 <code>https://w3id.org/omega-x/ontology/Property/</code>
 </dd>
-<dt id="prov">prov</dt>
-<dd>
-<code>http://www.w3.org/ns/prov#</code>
-</dd>
 <dt id="rdf">rdf</dt>
 <dd>
 <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code>
@@ -2363,10 +2404,6 @@ td {
 <code>http://www.w3.org/2000/01/rdf-schema#</code>
 </dd>
 <dt id="schema">schema</dt>
-<dd>
-<code>https://schema.org/</code>
-</dd>
-<dt id="schema1">schema1</dt>
 <dd>
 <code>http://schema.org/</code>
 </dd>
@@ -2627,9 +2664,6 @@ td {
 <a href="#prop">prop</a>
 </li>
 <li>
-<a href="#prov">prov</a>
-</li>
-<li>
 <a href="#rdf">rdf</a>
 </li>
 <li>
@@ -2637,9 +2671,6 @@ td {
 </li>
 <li>
 <a href="#schema">schema</a>
-</li>
-<li>
-<a href="#schema1">schema1</a>
 </li>
 <li>
 <a href="#time">time</a>
