@@ -13,7 +13,7 @@ This Infrastructure Ontology helps to define the infrastructure system of OMEGA-
 ### Querying Questions
 | ID | Question in natural language | Example
 |---|---|---|
-| cq-1 |What is the identifier of specific system? | the id of a specific system |
+| cq-1 |What is the identifier of specific system ? | the id of a specific system |
 | cq-2 |What is the system connected to a specific system? | A weather station  is connected to meter  |
 | cq-3 |What is the location of a specific site? | the  geolocation of a solar plant|
 | cq-1 |What is the system configuratin of a specific equipment? | the configuration  of a specific battery includig the nominal charge voltage|
