@@ -22,17 +22,17 @@ The scope of this module extends also to the definition of common metadata for s
 
 ## Glossary
 ### Omega-X ETS
-* [**ets:_ValueSet_**](https://w3id.org/omega-x/EventTimeSeriesOntology/ValueSet/)
+* [**ets:_ValueSet_**](https://w3id.org/omega-x/ontology/EventTimeSeries/ValueSet/)
 Value container for a set of data (data point, collection, event or time series).
-* [**ets:_TimeSeries_**](https://w3id.org/omega-x/EventTimeSeriesOntology/TimeSeries/)
+* [**ets:_TimeSeries_**](https://w3id.org/omega-x/ontologyEventTimeSeries/TimeSeries/)
 Value container for a time series.
-* [**ets:_DataCollection_**](https://w3id.org/omega-x/EventTimeSeriesOntology/DataCollection/)
+* [**ets:_DataCollection_**](https://w3id.org/omega-x/ontology/EventTimeSeries/DataCollection/)
 A data collection represents a set of data points, that share some common context. Data Collections can have a common dateTime.
-* [**ets:_DataPoint_**](https://w3id.org/omega-x/EventTimeSeriesOntology/DataPoint/)
+* [**ets:_DataPoint_**](https://w3id.org/omega-x/ontology/EventTimeSeries/DataPoint/)
 A data point with a unique value, and possible data time.
-* [**ets:_Event_**](https://w3id.org/omega-x/EventTimeSeriesOntology/Event/)
+* [**ets:_Event_**](https://w3id.org/omega-x/ontology/EventTimeSeries/Event/)
 An occurrence of a change in the environement that happens at a specific time.
-* [**ets:_PropertyValue_**](https://w3id.org/omega-x/EventTimeSeriesOntology/PropertyValue/)
+* [**ets:_PropertyValue_**](https://w3id.org/omega-x/ontology/EventTimeSeries/PropertyValue/)
 A property value is the value associated with a unique property and a unit of measurement.
 ## OWL Description
 
@@ -46,7 +46,7 @@ A property value is the value associated with a unique property and a unit of me
 
 - Value Sets basic elements are `ets:DataPoint` and `ets:Event`. They both enable to indicate a mandatory value `ets:propertyValue` using an object property (resp. `ets:hasDataValue` and `ets:hasEventValue`). They also provide description on temporality. 
 
-- A value set and property value provide descriptions about some properties `prop:Property` (see [_property_](../Property Ontology)). In case the entire `TimeSeries` describe one unique property, the information about the property (`prop:isAboutProperty`) is indicated at the global level (`TimeSeries`). Elsewhere, detailed description of properties described is associated with each `DataPoint` or `Event`.
+- A value set and property value provide descriptions about some properties `prop:Property` (see [_property_](../PropertyOntology)). In case the entire `TimeSeries` describe one unique property, the information about the property (`prop:isAboutProperty`) is indicated at the global level (`TimeSeries`). Elsewhere, detailed description of properties described is associated with each `DataPoint` or `Event`.
 
 - Data collections enable to devine a structured data container where data points are ordered using a `ets:rank` value (when temporal footprint is not used). 
 
