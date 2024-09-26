@@ -38,12 +38,12 @@
                                                   rdfs:label "EUMED Metering Ontology"@en ;
                                                   owl:versionInfo "v1.0" ;
                                                   skos:scopeNote """EME is an ontology for representing EUMED Metering profile. EME is based around six main classes or groups of classes: 
-                                                   MeterReadingSet class: encapsulates a set of Meter Readings (container of measured values), Usage Points (points related to the measurements) and Reading Types (characterization of the kind of the measured values).
-                                                   Meter Reading group: composed of MeterReading, Meter, Customer and IntervalBlock classes. MeterReading gives the period of measurement for a series related to a given UsagePoint. It may be further characterized by Meter (reference to the physical device) and Customer (reference to the category/kind). IntervalBlock allows reference to ReadingType and access to individual readings.
-                                                   Interval Reading group: composed of IntervalReading and ReadingQuality classes. IntervalReading contains the measured value and the time interval or the timestamp of the measurement. It may be associated to several reading quality attributes.
-                                                   Usage Point group: composed of UsagePoint and UsagePointLocation classes. UsagePoint identifies a logical or physical device related to the measurements optionally characterized by a location.
-                                                   Reading Type class: gathers 16 technical parameters that permit to characterize the set of measured values composing a Meter Reading.
-                                                   Name group: composed of Name, NameType and NameTypeAuthority classes. This is an optional way to identify Usage Points and Reading Types."""@en .
+                                                   MeterReadingSet class: encapsulates a set of Meter Readings (container of measured values), Usage Points (points related to the measurements) and Reading Types (characterization of the kind of the measured values).
+                                                   Meter Reading group: composed of MeterReading, Meter, Customer and IntervalBlock classes. MeterReading gives the period of measurement for a series related to a given UsagePoint. It may be further characterized by Meter (reference to the physical device) and Customer (reference to the category/kind). IntervalBlock allows reference to ReadingType and access to individual readings.
+                                                  Interval Reading group: composed of IntervalReading and ReadingQuality classes. IntervalReading contains the measured value and the time interval or the timestamp of the measurement. It may be associated to several reading quality attributes.
+                                                  Usage Point group: composed of UsagePoint and UsagePointLocation classes. UsagePoint identifies a logical or physical device related to the measurements optionally characterized by a location.
+                                                   Reading Type class: gathers 16 technical parameters that permit to characterize the set of measured values composing a Meter Reading.
+                                                  Name group: composed of Name, NameType and NameTypeAuthority classes. This is an optional way to identify Usage Points and Reading Types."""@en .
 
 #---------------------------------------------------------------
 #    Annotation properties
@@ -73,13 +73,13 @@ time:DateTimeInterval rdf:type owl:Class .
 #-- AccumulationKind
 eme:AccumulationKind rdf:type owl:Class ;
                      rdfs:subClassOf eme:Datatype ;
-                     rdfs:comment "Kind of accumulation behaviour for read / measured values from individual end points."@en ;
+                     rdfs:comment "Kind of accumulation behaviour for read or measured values from individual end points."@en ;
                      rdfs:label "accumulation kind"@en .
 
 #-- AggregateKind
 eme:AggregateKind rdf:type owl:Class ;
                   rdfs:subClassOf eme:Datatype ;
-                  rdfs:comment "Kind of aggregation for read / measured values from multiple end points."@en ;
+                  rdfs:comment "Kind of aggregation for read or measured values from multiple end points."@en ;
                   rdfs:label "aggregate kind"@en .
 
 #-- CommodityKind
@@ -120,7 +120,7 @@ eme:Entity rdf:type owl:Class ;
 #-- FlowDirectionKind
 eme:FlowDirectionKind rdf:type owl:Class ;
                       rdfs:subClassOf eme:Datatype ;
-                      rdfs:comment "Kind of flow direction for reading/measured  values proper to some commodities such as, for example, energy, power, demand."@en ;
+                      rdfs:comment "Kind of flow direction for reading or measured  values proper to some commodities such as, for example, energy, power, demand."@en ;
                       rdfs:label "flow direction kind"@en .
 
 #-- IntervalBlock
@@ -144,7 +144,7 @@ Note: Interval Data is sometimes also called \"Interval Data Readings\" (IDR).""
 #-- MacroPeriodKind
 eme:MacroPeriodKind rdf:type owl:Class ;
                     rdfs:subClassOf eme:Datatype ;
-                    rdfs:comment "Kind of macro period for calculations on read / measured values."@en ;
+                    rdfs:comment "Kind of macro period for calculations on read or measured values."@en ;
                     rdfs:label "macro period kind"@en .
 
 #-- MeasurementKind
@@ -155,7 +155,7 @@ eme:MeasurementKind rdf:type owl:Class ;
 #-- MeasuringPeriodKind
 eme:MeasuringPeriodKind rdf:type owl:Class ;
                         rdfs:subClassOf eme:Datatype ;
-                        rdfs:comment "Kind of period for reading / measuring values"@en ;
+                        rdfs:comment "Kind of period for reading or measuring values"@en ;
                         rdfs:label "measuring period kind"@en .
 
 #-- Meter
@@ -634,7 +634,7 @@ eme:rationalNumber rdf:type owl:DatatypeProperty ;
                                                      ]
                                           ]
                               ] ;
-                   rdfs:comment "Rational number = 'numerator' / 'denominator'."@en ;
+                   rdfs:comment "Rational number = 'numerator' over 'denominator'."@en ;
                    rdfs:label "rational number"@en .
 
 #-- readingInterharmonic
@@ -649,7 +649,7 @@ eme:readingInterharmonic rdf:type owl:DatatypeProperty ;
                                                            ]
                                                 ]
                                     ] ;
-                         rdfs:comment "Interharmonics are represented as a rational number 'numerator' / 'denominator', and harmonics are represented using the same mechanism and identified by 'denominator'=1."@en ;
+                         rdfs:comment "Interharmonics are represented as a rational number 'numerator' over 'denominator', and harmonics are represented using the same mechanism and identified by 'denominator'=1."@en ;
                          rdfs:label "reading interharmonic"@en .
 
 #-- timeStamp
