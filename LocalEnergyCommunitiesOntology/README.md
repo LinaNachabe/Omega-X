@@ -25,20 +25,20 @@ This Local Energy Communities ontology helps to define the equipments of OMEGA-X
 
 ## Glossary
 ### Omega-X LEC
-* [**lec:_Battery_**](https://w3id.org/omega-x/LocalEnergyCommunitiesOntology/Battery)
+* [**lec:_Battery_**](https://w3id.org/omega-x/ontology/LocalEnergyCommunitiesy/Battery)
 Battery electric power storage systems.
-* [**lec:_PED_**](https://w3id.org/omega-x/LocalEnergyCommunitiesOntology/PED)
+* [**lec:_PowerElectronicDevice_**](https://w3id.org/omega-x/ontology/LocalEnergyCommunities/PowerElectronicDeviceD)
 Power electronic device that takes power from the battery/grid to balance the difference phases.
-* [**lec:_IDPR_**](https://w3id.org/omega-x/LocalEnergyCommunitiesOntology/IDPR)
+* [**lec:_IntelligentDistributionPowerRouter_**](https://w3id.org/omega-x/ontology/LocalEnergyCommunities/IntelligentDistributionPowerRouter)
 Intelligent Distribution Power Router.
-* [**lec:_PCC_**](https://w3id.org/omega-x/LocalEnergyCommunitiesOntology/PCC)
+* [**lec:_PointofCommonCoupling_**](https://w3id.org/omega-x/ontology/LocalEnergyCommunities/PointofCommonCoupling)
 The exchange point of the grid.
-* [**lec:_batteryConfiguration_**](https://w3id.org/omega-x/LocalEnergyCommunitiesOntology/batteryConfiguration)
+* [**lec:_batteryConfiguration_**](https://w3id.org/omega-x/ontology/LocalEnergyCommunities/batteryConfiguration)
 A battery configuration defining the value of the battery properties based on the battery data sheet.
-* [**lec:_Transformer_**](https://w3id.org/omega-x/LocalEnergyCommunitiesOntology/Transformer)
+* [**lec:_Transformer_**](https://w3id.org/omega-x/ontology/LocalEnergyCommunities/Transformer)
 A static piece of apparatus with two or more windings which, by electromagnetic induction, transforms a system of alternating voltage and current into another system of voltage and current usually of different values and at the same frequency for the purpose of transmitting electrical power.
-* [**lec:_transformerConfiguration_**](https://w3id.org/omega-x/LocalEnergyCommunitiesOntology/transformerConfiguration)
-A transformer configuration defining the value of the transformer propertie.
+* [**lec:_transformerConfiguration_**](https://w3id.org/omega-x/ontology/LocalEnergyCommunities/transformerConfiguration)
+A transformer configuration defining the value of the transformer properties.
 
 ## OWL Description
 
