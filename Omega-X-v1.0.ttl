@@ -43,7 +43,7 @@
                                                          <https://w3id.org/omega-x/ontology/EnergyRole> ,
                                                          <https://w3id.org/omega-x/ontology/EUMEDMetering> ,
                                                          <https://w3id.org/omega-x/ontology/Flexibility> ,
-                                                         <https://w3id.org/omega-x/ontology/RenewableSolar> ,
+                                                         <https://w3id.org/omega-x/ontology/RenewablesSolar> ,
                                                          <https://w3id.org/omega-x/ontology/Electromobility> ,
                                                          <https://w3id.org/omega-x/ontology/LocalEnergyCommunities> .
 
