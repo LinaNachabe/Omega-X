@@ -18,11 +18,6 @@ This Local Energy Communities ontology helps to define the equipments of OMEGA-X
 | cq-3 |What is the location of specific bus? | the  geolocation of a specific bus|
 | cq-4 |To which solar inverter a specific battery is connected to? | the solar inverter connected to a specific battery|
 
-### Inference Questions
-| ID | Question in natural language | Example
-|---|---|---|
-| iq-1 |To which batteries a specific solar inverter is connected to?| the list of batteries connected to a specific solar inverter|
-
 ## Glossary
 ### Omega-X LEC
 * [**lec:_Battery_**](https://w3id.org/omega-x/ontology/LocalEnergyCommunitiesy/Battery)
