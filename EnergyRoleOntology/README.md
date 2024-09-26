@@ -21,7 +21,6 @@ The Energy Role ontology defines three generic concepts: business parties (parti
 
 ## OWL Description
 The genereic model of the Energy Role Ontology
-- Generic model
 ![Diagram](./RoleOntology.png)
 
 ## Recommendations
